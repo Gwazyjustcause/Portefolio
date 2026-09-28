@@ -233,6 +233,39 @@
 <section id="about" class="about"><div class="about-title"><p class="eyebrow">About / Sobre</p><h2><span class="i18n" data-en="Not one<br>medium." data-pt="Não apenas<br>um meio.">Not one<br>medium.</span></h2></div><div class="about-copy"><p class="about-lead"><span class="i18n" data-en="I'm Gabriela Ferreira, a multidisciplinary visual designer and artist in Portugal." data-pt="Sou Gabriela Ferreira, designer visual multidisciplinar e artista em Portugal.">I'm Gabriela Ferreira, a multidisciplinary visual designer and artist in Portugal.</span></p><p><span class="i18n" data-en="My background moves from Fine Arts into a Master's in Multimedia and professional visual production. That mix is why the work here moves naturally between identity, web, photography, painting and 3D." data-pt="O meu percurso passa das Belas-Artes para um Mestrado em Multimédia e para a produção visual profissional. É essa mistura que faz com que o trabalho aqui passe naturalmente por identidade, web, fotografia, pintura e 3D.">My background moves from Fine Arts into a Master's in Multimedia and professional visual production. That mix is why the work here moves naturally between identity, web, photography, painting and 3D.</span></p><p><span class="i18n" data-en="I care about making things clear, useful and visually memorable — and about choosing the medium around the problem rather than forcing every project into the same shape." data-pt="Interessa-me criar coisas claras, úteis e visualmente memoráveis — e escolher o meio em função do problema, em vez de obrigar todos os projetos a ter a mesma forma.">I care about making things clear, useful and visually memorable — and about choosing the medium around the problem rather than forcing every project into the same shape.</span></p><div class="about-tags"><span>IDENTITY</span><span>WEB / UX</span><span>IMAGE</span><span>ART</span><span>3D</span></div></div></section>
 </main>
 <footer><span>Gabriela Ferreira</span><span>Portugal</span><span>© 2026</span></footer>
+<div class="art-lightbox" id="art-lightbox" aria-hidden="true">
+<button class="art-lightbox-close" type="button" aria-label="Close image">×</button>
+<img src="" alt="">
+<div class="art-lightbox-caption"></div>
+</div>
+<script>
+(function(){
+ const lightbox=document.getElementById('art-lightbox');
+ const lightboxImg=lightbox.querySelector('img');
+ const lightboxCaption=lightbox.querySelector('.art-lightbox-caption');
+ const closeLightbox=()=>{lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');document.body.classList.remove('lightbox-open');setTimeout(()=>{if(!lightbox.classList.contains('open')) lightboxImg.src='';},220);};
+ document.querySelectorAll('#painting .paint-grid img, #painting .sumo-horizontal img').forEach(img=>{
+  img.classList.add('art-zoomable');
+  img.setAttribute('tabindex','0');
+  img.setAttribute('role','button');
+  const open=()=>{
+   lightboxImg.src=img.currentSrc||img.src;
+   lightboxImg.alt=img.alt||'Painting';
+   const fig=img.closest('figure');
+   const title=fig&&fig.querySelector('figcaption b');
+   lightboxCaption.textContent=title?title.textContent:'';
+   lightbox.classList.add('open');
+   lightbox.setAttribute('aria-hidden','false');
+   document.body.classList.add('lightbox-open');
+  };
+  img.addEventListener('click',open);
+  img.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+ });
+ lightbox.querySelector('.art-lightbox-close').addEventListener('click',closeLightbox);
+ lightbox.addEventListener('click',e=>{if(e.target===lightbox) closeLightbox();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&lightbox.classList.contains('open')) closeLightbox();});
+})();
+</script>
 <script>
 (function(){
  const buttons=document.querySelectorAll('.lang-switch button');
