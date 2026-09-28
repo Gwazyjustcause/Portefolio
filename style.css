@@ -625,11 +625,17 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 #painting .paint-grid figcaption{display:flex;flex-direction:column;gap:7px;padding:13px 2px 28px;border-top:0}
 #painting .paint-grid figcaption b{font:600 14px/1.3 Inter,sans-serif}
 #painting .paint-grid figcaption span{font:12px/1.55 "DM Mono",monospace;opacity:.72;max-width:34em}
-#painting .paint-grid-faves figure{margin:0!important}\n#painting .paint-grid-faves img{max-height:300px;width:100%;object-fit:contain;object-position:center;box-shadow:none}\n#painting .paint-grid-faves figure{display:grid;place-items:center;padding:20px;background:#e5e2da;min-height:340px}\n#painting .paint-grid-faves figure:hover img{transform:scale(1.015);box-shadow:none}
-@media(max-width:1000px){\n #painting .paint-grid-wdwsg,#painting .paint-grid-four{grid-template-columns:repeat(2,1fr)}\n #painting .paint-grid-faves{grid-template-columns:repeat(3,minmax(0,1fr))}\n}
+#painting .paint-grid-faves figure{margin:0!important}\n#painting .paint-grid-faves img{max-height:300px;width:100%;object-fit:contain;object-position:center;box-shadow:none}\n#painting .paint-grid-faves figure{display:grid;place-items:center;padding:20px;background:#e5e2da;min-height:340px}
+#painting .paint-grid-faves .paint-fave-feature{grid-column:2 / span 2;min-height:460px;margin-top:18px!important;padding:28px}
+#painting .paint-grid-faves .paint-fave-feature img{max-height:410px}\n#painting .paint-grid-faves figure:hover img{transform:scale(1.015);box-shadow:none}
+@media(max-width:1000px){\n #painting .paint-grid-wdwsg,#painting .paint-grid-four{grid-template-columns:repeat(2,1fr)}\n #painting .paint-grid-faves{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #painting .paint-grid-faves .paint-fave-feature{grid-column:1 / -1;max-width:680px;width:100%;justify-self:center}
+}
 @media(max-width:650px){
  #painting .paint-series-head{grid-template-columns:1fr;gap:22px;margin-bottom:30px}
  #painting .paint-grid-wdwsg,#painting .paint-grid-three,#painting .paint-grid-four{grid-template-columns:1fr}\n #painting .paint-grid-faves{grid-template-columns:repeat(2,minmax(0,1fr))}\n #painting .paint-grid-faves img{max-height:260px}
+ #painting .paint-grid-faves .paint-fave-feature{grid-column:1 / -1;min-height:330px;max-width:100%;padding:18px}
+ #painting .paint-grid-faves .paint-fave-feature img{max-height:300px}
  #painting .paint-series-block,#painting .paint-favourites{padding:70px 0}
  #painting .paint-grid figcaption span{font-size:12px}
 }
