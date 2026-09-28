@@ -434,3 +434,91 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
  #adam .home-flow p{font-size:13px!important}
  #cuidar .colour-context p,#cuidar .colour-context p span{font-size:14px!important}
 }
+
+/* === Portfolio visual QA: final type scale + readable evidence UI === */
+@media(min-width:801px){
+  /* A consistent desktop display scale: large, but not billboard-sized */
+  #adam .step-copy h3,#adam .page-title h3,
+  #cuidar .cs-copy h3,#cuidar .system-head h3,#cuidar .promo-head h3{
+    font-size:clamp(40px,4vw,64px)!important;
+    line-height:1!important;
+    letter-spacing:-.045em!important;
+  }
+
+  /* EXACT ADAM IA panel — force readable type and useful card proportions */
+  #adam .page-map{
+    grid-template-columns:1fr 1fr!important;
+    gap:1px!important;
+    background:#0d120e!important;
+  }
+  #adam .page-map a{
+    min-height:190px!important;
+    padding:32px!important;
+    justify-content:center!important;
+    align-items:flex-start!important;
+    background:#1b261e!important;
+  }
+  #adam .page-map a b{
+    font:600 16px/1.25 Inter,sans-serif!important;
+    letter-spacing:.01em!important;
+    color:#f5f4ee!important;
+  }
+  #adam .page-map a>span,
+  #adam .page-map a>span>span{
+    font:13px/1.45 "DM Mono",monospace!important;
+    letter-spacing:0!important;
+    color:#bdc7bf!important;
+    opacity:1!important;
+  }
+
+  /* Remaining ADAM evidence/UI microcopy */
+  #adam .iteration-notes span{font-size:13px!important;line-height:1.45!important;opacity:.82!important}
+  #adam .iteration-notes b{font-size:11px!important}
+  #adam .dash-head small,#adam .dash-head i{font-size:11px!important}
+  #adam .dash-actions span{font-size:12px!important}
+  #adam .member-card-study small,#adam .member-card-study>em,#adam .card-meta{font-size:11px!important;line-height:1.4!important}
+  #adam .problem-grid span{font-size:12px!important;opacity:.78!important}
+  #adam .admin-thinking span{font-size:13px!important;line-height:1.45!important}
+  #adam .directory-study small{font-size:11px!important}
+  #adam .directory-study span{font-size:12px!important;line-height:1.4!important;opacity:.8!important}
+  #adam .join-flow{font-size:13px!important}
+  #adam .faq-study span{font-size:13px!important;line-height:1.45!important}
+  #adam .member-system-map{font-size:12px!important;line-height:1.4!important}
+  #adam .state-map,#adam .growth-line{font-size:12px!important}
+  #adam .case-link{font-size:12px!important}
+
+  /* Remaining Cuidar informational microcopy */
+  #cuidar .cuidar-index,#cuidar .cs-no{font-size:12px!important}
+  #cuidar .concept-build>div>span,#cuidar .concept-build small{font-size:11px!important;opacity:.7!important}
+  #cuidar .cuidar-statement>span,#cuidar .wordmark-study small,#cuidar .wordmark-study>span{font-size:11px!important;opacity:.7!important}
+  #cuidar .swatches b{font-size:11px!important}
+  #cuidar .logo-versions>div>span,#cuidar .logo-versions small{font-size:11px!important;opacity:.72!important}
+  #cuidar .cuidar-brandbook-note>span{font-size:11px!important;opacity:.72!important}
+  #cuidar .cuidar-brandbook-note small{font-size:12px!important}
+  #cuidar .application-rules b{font-size:11px!important}
+  #cuidar .cuidar-title.clean .source-label,
+  #cuidar .cuidar-hero-v4 .source-label{font-size:11px!important;opacity:.68!important}
+  #cuidar .cuidar-symbol-stage small,#cuidar .cuidar-horizontal-stage small,
+  #cuidar .real-versions figure>span,#cuidar .real-versions figure>small{font-size:11px!important;opacity:.7!important}
+  #cuidar .name-reading{font-size:12px!important}
+  #cuidar .brief-facts b,#cuidar .brief-facts small{font-size:11px!important}
+  #cuidar .brief-facts b{font-size:14px!important}
+  #cuidar .system-marks figure>span,#cuidar .system-marks figcaption{font-size:11px!important}
+  #cuidar .system-principles b{font-size:11px!important}
+  #cuidar .promo-note>span,#cuidar .promo-series figcaption,#cuidar .promo-caption{font-size:11px!important;line-height:1.45!important;opacity:.72!important}
+
+  /* Reading paragraphs: enough presence without overpowering the work */
+  #adam .step-copy>p:not(.eyebrow):not(.decision),
+  #adam .page-note,#adam .process-photo-break p:last-child,#adam .reflection>p:last-of-type,
+  #cuidar .cs-copy>p:last-child,#cuidar .colour-system>div:first-child>p:last-child,
+  #cuidar .type-rule>p,#cuidar .app-copy>p:last-child,#cuidar .cuidar-reflection>p:last-child,
+  #cuidar .system-head>p:last-child,#cuidar .promo-head>p:last-child{
+    font-size:16px!important;line-height:1.6!important;
+  }
+}
+@media(max-width:800px){
+  #adam .page-map{grid-template-columns:1fr!important}
+  #adam .page-map a{min-height:118px!important;padding:22px!important}
+  #adam .page-map a b{font-size:15px!important}
+  #adam .page-map a>span,#adam .page-map a>span>span{font-size:12px!important}
+}
