@@ -181,3 +181,26 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 #cuidar .colour-context>div:nth-child(2){box-shadow:inset 0 7px 0 var(--care-blue)}
 #cuidar .context-sources{opacity:.58}
 @media(max-width:800px){#cuidar .brief-facts{grid-template-columns:1fr}#cuidar .brief-facts>span{border-right:0;border-bottom:1px solid #111;padding:16px 0}#cuidar .brief-facts>span+span{padding-left:0}#cuidar .colour-context{grid-template-columns:1fr}#cuidar .colour-context>div{border-right:0;border-bottom:1px solid #151515;min-height:210px}}
+
+/* Cuidar+ — replace the two heavy presentation blocks */
+#cuidar .cuidar-logo-system{padding:9vw 0;border-top:1px solid #171717;display:grid;grid-template-columns:.72fr 1.28fr;gap:8vw}
+#cuidar .system-head h3{font-family:Inter,sans-serif;font-size:clamp(48px,5.6vw,88px);line-height:.94;letter-spacing:-.055em;margin:22px 0 34px;max-width:720px}
+#cuidar .system-head>p:last-child{font-size:14px;line-height:1.65;max-width:560px}
+#cuidar .system-marks{display:grid;grid-template-columns:1fr 1fr;gap:1px;border:1px solid #171717}
+#cuidar .system-marks figure{margin:0;min-height:520px;padding:24px;display:flex;flex-direction:column;background:transparent}
+#cuidar .system-marks figure>span,#cuidar .system-marks figcaption{font:8px "DM Mono",monospace;letter-spacing:.05em}
+#cuidar .system-marks figure>span{color:#008ccc}
+#cuidar .system-marks img{width:72%;max-height:330px;object-fit:contain;margin:auto}
+#cuidar .system-marks figcaption{padding-top:18px;border-top:1px solid #171717}
+#cuidar .cuidar-application.refined{padding:9vw 0!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:10vw!important;align-items:end!important;background:transparent!important;color:#171717!important;border-top:1px solid #171717}
+#cuidar .cuidar-application.refined .app-copy h3{font-family:Inter,sans-serif;font-size:clamp(50px,6vw,94px);line-height:.93;letter-spacing:-.06em;margin:22px 0 34px;max-width:800px}
+#cuidar .cuidar-application.refined .app-copy>p:last-child{font-size:14px;line-height:1.65;max-width:620px}
+#cuidar .system-principles{border-top:1px solid #171717}
+#cuidar .system-principles>div{display:grid;grid-template-columns:55px 1fr;gap:25px;padding:24px 0;border-bottom:1px solid #171717;align-items:baseline}
+#cuidar .system-principles b{font:9px "DM Mono",monospace;color:#008ccc}
+#cuidar .system-principles p{font-family:"Instrument Serif",serif;font-size:clamp(25px,2.2vw,35px);line-height:1;margin:0}
+@media(max-width:800px){
+ #cuidar .cuidar-logo-system,#cuidar .cuidar-application.refined{grid-template-columns:1fr!important;gap:55px!important;padding:90px 0!important}
+ #cuidar .system-marks{grid-template-columns:1fr}
+ #cuidar .system-marks figure{min-height:390px}
+}
