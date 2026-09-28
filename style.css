@@ -14,3 +14,8 @@ header nav .lang-switch button{display:inline-block!important;color:#171717!impo
 header nav .lang-switch button.active{opacity:1;font-weight:600;border-bottom:1px solid #171717}
 header nav .lang-switch span{display:inline!important;color:#171717!important;opacity:.25}
 @media(max-width:700px){header nav .lang-switch{min-width:54px;margin-left:2px}header nav>a{display:none}}
+
+/* Keep the QR label attached to the QR itself */
+.qr-block{align-self:end;justify-self:end;display:flex;flex-direction:column;align-items:center;gap:10px}
+.qr-block .qr-faux{align-self:auto}
+.qr-block>small{display:block;text-align:center;white-space:nowrap}
