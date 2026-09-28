@@ -70,3 +70,11 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 
 /* Cuidar+ original source artwork */
 .actual-logo-slot{background:#111!important}.actual-logo-slot img{display:block;width:100%;height:auto;max-height:330px;object-fit:contain;margin:auto 0}.actual-logo-slot small{margin-top:12px}.type-rule .eyebrow{color:#fedb00}
+
+/* Cuidar hero hotfix — source artwork only, no faux wordmark */
+.cuidar-title.corrected{grid-template-columns:1.15fr .85fr;gap:7vw;align-items:center;margin-top:10vw}
+.cuidar-title.corrected .cuidar-wordmark-source{width:100%;min-height:360px;display:flex;align-items:center;justify-content:center;background:#111;padding:5vw}
+.cuidar-title.corrected .cuidar-wordmark-source img{display:block;width:min(520px,90%);height:auto;object-fit:contain}
+.cuidar-title.corrected>p{font-family:"Instrument Serif",serif;font-size:clamp(32px,4vw,62px);line-height:1.02;margin:0;max-width:650px}
+.cuidar-title.corrected h2,.actual-logo-slot{display:none!important}
+@media(max-width:800px){.cuidar-title.corrected{grid-template-columns:1fr}.cuidar-title.corrected .cuidar-wordmark-source{min-height:260px;padding:40px 25px}}
