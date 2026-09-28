@@ -361,3 +361,76 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
   #cuidar .colour-context p span{font-size:14px!important;line-height:1.55!important;max-width:430px!important}
   #cuidar .colour-context .context-sources p{font-size:14px!important;line-height:1.5!important}
 }
+
+/* === Final legibility + visual polish audit (2026-09-28) === */
+:root{--readable-muted:#a9b0aa}
+
+/* Keep informative text readable. Micro type is reserved for genuinely decorative indices. */
+@media(min-width:801px){
+  #adam .eyebrow,#cuidar .eyebrow{font-size:12px!important;line-height:1.35!important;letter-spacing:.055em!important}
+  #adam .step-no,#cuidar .step-no{font-size:12px!important}
+  #adam figcaption,#cuidar figcaption{font-size:12px!important;line-height:1.45!important;opacity:.72!important}
+
+  /* ADAM — information architecture: screenshoted problem */
+  #adam .step-evidence.page-map{gap:1px!important}
+  #adam .page-map a{
+    min-height:210px!important;
+    padding:28px 30px!important;
+    justify-content:center!important;
+    background:#19221b!important;
+  }
+  #adam .page-map a b{
+    font:600 16px/1.25 Inter,sans-serif!important;
+    color:#f3f2ec!important;
+    opacity:1!important;
+  }
+  #adam .page-map a>span{
+    font:13px/1.45 "DM Mono",monospace!important;
+    color:#c4cbc5!important;
+    opacity:1!important;
+    margin-top:10px!important;
+  }
+  #adam .page-map a:hover b,#adam .page-map a:hover>span{color:#111!important}
+
+  /* ADAM — community evidence cards */
+  #adam .community-compare b,#adam .directory-grid b,#adam [class*="directory"] b{
+    font-size:14px!important;line-height:1.35!important
+  }
+  #adam .community-compare span,#adam .community-compare p,
+  #adam .directory-grid span,#adam .directory-grid p,
+  #adam [class*="directory"] span,#adam [class*="directory"] p{
+    font-size:13px!important;line-height:1.5!important;opacity:.82!important
+  }
+
+  /* ADAM — homepage flow: hierarchy without giant supporting copy */
+  #adam .home-flow{gap:0!important}
+  #adam .home-flow div{min-height:150px!important;padding:24px!important}
+  #adam .home-flow b{font:11px/1.2 "DM Mono",monospace!important;opacity:.6!important}
+  #adam .home-flow strong{font-size:19px!important;line-height:1.2!important}
+  #adam .home-flow p{font:13px/1.4 "DM Mono",monospace!important}
+  #adam .page-deepdive>p{font-size:16px!important;line-height:1.55!important;max-width:650px!important}
+
+  /* Cuidar colour research — fix the other visibly tiny panel */
+  #cuidar .colour-context>div{padding:30px!important}
+  #cuidar .colour-context>div>span{font:11px/1.35 "DM Mono",monospace!important;opacity:.72!important}
+  #cuidar .colour-context strong,#cuidar .colour-context strong span{
+    font:600 16px/1.35 Inter,sans-serif!important;margin-top:18px!important
+  }
+  #cuidar .colour-context p,#cuidar .colour-context p span{
+    font:14px/1.55 Inter,sans-serif!important;opacity:.82!important
+  }
+
+  /* Keep long reading copy controlled */
+  #adam .step-copy>p:not(.eyebrow):not(.decision),
+  #cuidar .case-copy p,#cuidar .system-copy p{max-width:650px}
+}
+
+/* Mobile/tablet: don't let diagrams collapse back into microtext */
+@media(max-width:800px){
+ #adam .page-map a{min-height:125px!important;padding:22px!important;justify-content:center!important}
+ #adam .page-map a b{font-size:15px!important;color:#f3f2ec!important}
+ #adam .page-map a>span{font:12px/1.45 "DM Mono",monospace!important;color:#c4cbc5!important;opacity:1!important}
+ #adam .home-flow strong{font-size:18px!important}
+ #adam .home-flow p{font-size:13px!important}
+ #cuidar .colour-context p,#cuidar .colour-context p span{font-size:14px!important}
+}
