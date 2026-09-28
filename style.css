@@ -98,3 +98,22 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 #cuidar .cuidar-hero-v4 .cuidar-v4-intro{display:block!important;position:static!important;font-family:"Instrument Serif",serif!important;font-size:clamp(31px,3.5vw,54px)!important;line-height:1.02!important;letter-spacing:-.025em!important;margin:0!important;max-width:650px!important}
 #cuidar .cuidar-hero-v4 .cuidar-title,#cuidar .cuidar-hero-v4 .cuidar-brandbook-note,#cuidar .cuidar-hero-v4 .actual-logo-slot,#cuidar .cuidar-hero-v4 .cuidar-wordmark-source{display:none!important}
 @media(max-width:800px){#cuidar .cuidar-hero-v4{min-height:auto!important;padding-bottom:90px!important}#cuidar .cuidar-hero-v4 .cuidar-v4-grid{grid-template-columns:1fr!important;gap:55px!important;margin-top:25vw!important}#cuidar .cuidar-hero-v4 h2{font-size:clamp(78px,25vw,140px)!important}}
+
+/* Cuidar+ final source-led presentation */
+#cuidar .cuidar-hero-final{min-height:88vh!important;padding:7vw 0 8vw!important}
+#cuidar .cuidar-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:8vw;align-items:center;margin-top:7vw}
+#cuidar .cuidar-logo-stage{min-height:570px;background:#fff;display:flex;align-items:center;justify-content:center;padding:55px}
+#cuidar .cuidar-logo-stage img{display:block;width:min(360px,72%);max-height:470px;height:auto}
+#cuidar .cuidar-hero-copy h2{font-family:Inter,Arial,sans-serif!important;font-size:clamp(70px,9vw,145px)!important;line-height:.82!important;letter-spacing:-.075em!important;color:#111!important;margin:20px 0 35px!important}
+#cuidar .cuidar-hero-copy>p:last-child{font-family:"Instrument Serif",serif;font-size:clamp(28px,3.2vw,48px);line-height:1.05;margin:0;max-width:620px}
+#cuidar .cuidar-symbol-stage,#cuidar .cuidar-horizontal-stage{background:#fff;min-height:420px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:45px}
+#cuidar .cuidar-symbol-stage img{width:min(300px,70%);max-height:310px}
+#cuidar .cuidar-horizontal-stage img{width:min(520px,85%);max-height:270px}
+#cuidar .cuidar-symbol-stage small,#cuidar .cuidar-horizontal-stage small{font:8px "DM Mono",monospace;opacity:.45;margin-top:25px}
+#cuidar .real-versions{display:grid;grid-template-columns:1fr 1fr;background:#111;color:#fff;gap:1px}
+#cuidar .real-versions figure{margin:0;min-height:430px;padding:28px;background:#fff;color:#111;display:flex;flex-direction:column;align-items:center}
+#cuidar .real-versions figure>span,#cuidar .real-versions figure>small{align-self:flex-start;font:8px "DM Mono",monospace;opacity:.5}
+#cuidar .real-versions figure>small{margin-top:auto}
+#cuidar .real-versions img{display:block;max-width:78%;max-height:280px;margin:auto;object-fit:contain}
+#cuidar .wordmark-study,#cuidar .concept-build.text-only{display:none!important}
+@media(max-width:800px){#cuidar .cuidar-hero-grid{grid-template-columns:1fr;gap:45px;margin-top:18vw}#cuidar .cuidar-logo-stage{min-height:430px;padding:35px}#cuidar .cuidar-logo-stage img{width:min(280px,75%)}#cuidar .real-versions{grid-template-columns:1fr}#cuidar .real-versions figure{min-height:360px}}
