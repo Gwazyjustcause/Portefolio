@@ -330,3 +330,34 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 }
 /* Never allow informational microcopy to collapse into decorative 7–9px text */
 #adam small,#cuidar small{font-size:12px!important;line-height:1.5!important}
+
+/* Balanced typography pass — explicit component sizing */
+@media(min-width:801px){
+  /* Undo the overly broad previous body enlargement */
+  #adam p:not(.decision):not(.eyebrow),
+  #cuidar p:not(.eyebrow){font-size:16px!important;line-height:1.55!important}
+
+  /* ADAM: informational diagrams must be readable */
+  #adam .page-map b{font-size:14px!important;line-height:1.3!important}
+  #adam .page-map span{font-size:12px!important;line-height:1.45!important;opacity:.78!important}
+  #adam .home-flow b{font-size:11px!important;line-height:1.3!important}
+  #adam .home-flow strong{font-size:19px!important;line-height:1.25!important}
+  #adam .home-flow p{font-size:13px!important;line-height:1.4!important}
+  #adam .decision>b{font-size:11px!important}
+  #adam .decision>span{font-size:16px!important;line-height:1.45!important}
+  #adam .step-copy>p:not(.eyebrow):not(.decision){font-size:17px!important;line-height:1.55!important}
+  #adam .page-deepdive>p,#adam .page-deepdive .support-copy{font-size:16px!important;line-height:1.55!important}
+
+  /* Keep display headings strong, but stop them swallowing the page */
+  #adam .step-copy h3{font-size:clamp(44px,4.2vw,68px)!important;line-height:.98!important}
+  #adam .page-title h3{font-size:clamp(44px,4.6vw,72px)!important;line-height:.98!important}
+
+  /* Cuidar: the actual colour-context cards, not a nonexistent class */
+  #cuidar .colour-context>div{padding:30px!important;min-height:220px!important}
+  #cuidar .colour-context>div>span{font-size:11px!important;line-height:1.4!important}
+  #cuidar .colour-context strong,
+  #cuidar .colour-context strong span{font-size:16px!important;line-height:1.35!important}
+  #cuidar .colour-context p,
+  #cuidar .colour-context p span{font-size:14px!important;line-height:1.55!important;max-width:430px!important}
+  #cuidar .colour-context .context-sources p{font-size:14px!important;line-height:1.5!important}
+}
