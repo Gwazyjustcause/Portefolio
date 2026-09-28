@@ -204,3 +204,12 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
  #cuidar .system-marks{grid-template-columns:1fr}
  #cuidar .system-marks figure{min-height:390px}
 }
+
+/* Cuidar+ promotional communication */
+#cuidar .cuidar-promo{padding:9vw 0;border-top:1px solid #171717;display:grid;grid-template-columns:1.2fr .8fr;gap:10vw}
+#cuidar .promo-head h3{font-family:Inter,sans-serif;font-size:clamp(48px,6vw,92px);line-height:.94;letter-spacing:-.055em;margin:22px 0 34px;max-width:900px}
+#cuidar .promo-head>p:last-child{font-size:14px;line-height:1.65;max-width:650px}
+#cuidar .promo-note{align-self:end;border-top:1px solid #171717;padding-top:20px}
+#cuidar .promo-note>span{font:8px "DM Mono",monospace;color:#008ccc}
+#cuidar .promo-note p{font-family:"Instrument Serif",serif;font-size:clamp(23px,2vw,32px);line-height:1.08;margin:35px 0 0}
+@media(max-width:800px){#cuidar .cuidar-promo{grid-template-columns:1fr;gap:50px;padding:90px 0}}
