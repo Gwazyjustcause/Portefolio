@@ -117,3 +117,30 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 #cuidar .real-versions img{display:block;max-width:78%;max-height:280px;margin:auto;object-fit:contain}
 #cuidar .wordmark-study,#cuidar .concept-build.text-only{display:none!important}
 @media(max-width:800px){#cuidar .cuidar-hero-grid{grid-template-columns:1fr;gap:45px;margin-top:18vw}#cuidar .cuidar-logo-stage{min-height:430px;padding:35px}#cuidar .cuidar-logo-stage img{width:min(280px,75%)}#cuidar .real-versions{grid-template-columns:1fr}#cuidar .real-versions figure{min-height:360px}}
+
+/* Cuidar+ — meaning-led art direction */
+#cuidar{--care-blue:#008ccc;--care-yellow:#f7db17}
+#cuidar .cuidar-hero-grid.meaningful{grid-template-columns:1.02fr .98fr;gap:0!important;align-items:stretch!important;margin-top:7vw}
+#cuidar .brand-field{background:var(--care-blue)!important;min-height:610px!important;padding:70px!important;position:relative;overflow:hidden}
+#cuidar .brand-field:before{content:"+";position:absolute;right:-.08em;bottom:-.28em;font:700 430px/1 Inter,sans-serif;color:var(--care-yellow);opacity:.18}
+#cuidar .brand-field img{position:relative;z-index:1;width:min(390px,78%)!important;max-height:470px!important;filter:none}
+#cuidar .cuidar-hero-copy{background:var(--care-yellow);padding:70px 65px;display:flex;flex-direction:column;justify-content:center}
+#cuidar .cuidar-hero-copy .eyebrow{color:#111!important}
+#cuidar .cuidar-hero-copy h2{font-family:"Instrument Serif",serif!important;font-weight:400!important;font-size:clamp(72px,8vw,130px)!important;letter-spacing:-.06em!important;margin:18px 0 30px!important}
+#cuidar .cuidar-hero-copy>p:last-of-type{font-family:Inter,sans-serif!important;font-size:16px!important;line-height:1.6!important;max-width:570px}
+#cuidar .name-reading{margin-top:55px;padding-top:18px;border-top:1px solid #111;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;font:10px "DM Mono",monospace;letter-spacing:.08em}
+#cuidar .name-reading b{font:700 38px/1 Inter,sans-serif;color:var(--care-blue)}
+#cuidar .name-reading span:last-child{text-align:right}
+#cuidar .cuidar-symbol-stage{background:var(--care-blue)!important}
+#cuidar .cuidar-symbol-stage img{filter:none}
+#cuidar .cuidar-symbol-stage small{color:#fff!important;opacity:.7!important}
+#cuidar .cuidar-horizontal-stage{background:var(--care-yellow)!important}
+#cuidar .real-versions figure{background:#f4f1e9!important}
+#cuidar .swatches .blue{background:var(--care-blue)!important}
+#cuidar .swatches .yellow{background:var(--care-yellow)!important}
+@media(max-width:800px){
+ #cuidar .cuidar-hero-grid.meaningful{grid-template-columns:1fr!important}
+ #cuidar .brand-field{min-height:460px!important;padding:45px!important}
+ #cuidar .cuidar-hero-copy{padding:50px 30px}
+ #cuidar .name-reading{margin-top:38px}
+}
