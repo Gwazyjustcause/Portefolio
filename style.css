@@ -296,3 +296,37 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
   font-size:max(12px,.72vw)!important;
   line-height:1.5!important;
 }
+
+/* Accessibility/readability correction — desktop case studies */
+@media (min-width:801px){
+  #adam p:not(.eyebrow):not(.source-label):not(.promo-caption),
+  #cuidar p:not(.eyebrow):not(.source-label):not(.promo-caption){
+    font-size:clamp(17px,1.08vw,20px)!important;
+    line-height:1.55!important;
+  }
+  #adam .eyebrow,#cuidar .eyebrow,
+  #adam .source-label,#cuidar .source-label,
+  #adam figcaption,#cuidar figcaption,
+  #adam .meta-label,#cuidar .meta-label,
+  #adam [class*="label"],#cuidar [class*="label"]{
+    font-size:clamp(12px,.82vw,15px)!important;
+    line-height:1.5!important;
+  }
+  #adam .thought-process,#adam [class*="thought"],
+  #cuidar .thought-process,#cuidar [class*="thought"]{
+    font-size:clamp(15px,.95vw,18px)!important;
+    line-height:1.5!important;
+  }
+  #adam .architecture-grid *,#adam .site-map *,
+  #adam [class*="architecture"] *{
+    font-size:clamp(12px,.78vw,15px)!important;
+    line-height:1.5!important;
+  }
+  #cuidar .colour-context-grid *,
+  #cuidar [class*="context-grid"] *{
+    font-size:clamp(13px,.82vw,16px)!important;
+    line-height:1.55!important;
+  }
+}
+/* Never allow informational microcopy to collapse into decorative 7–9px text */
+#adam small,#cuidar small{font-size:12px!important;line-height:1.5!important}
