@@ -144,3 +144,22 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
  #cuidar .cuidar-hero-copy{padding:50px 30px}
  #cuidar .name-reading{margin-top:38px}
 }
+
+/* Cuidar+ contrast correction — keep the portfolio page background */
+#cuidar .cuidar-hero-grid.meaningful{gap:8vw!important}
+#cuidar .brand-field,
+#cuidar .cuidar-hero-copy,
+#cuidar .cuidar-symbol-stage,
+#cuidar .cuidar-horizontal-stage,
+#cuidar .real-versions figure{background:transparent!important}
+#cuidar .brand-field{padding:35px!important;min-height:560px!important}
+#cuidar .brand-field:before{display:none!important}
+#cuidar .brand-field img{width:min(390px,78%)!important;max-height:470px!important}
+#cuidar .cuidar-hero-copy{padding:35px 0!important}
+#cuidar .cuidar-symbol-stage small{color:#111!important}
+#cuidar .name-reading{border-color:#111!important}
+@media(max-width:800px){
+ #cuidar .cuidar-hero-grid.meaningful{gap:45px!important}
+ #cuidar .brand-field{min-height:430px!important;padding:25px!important}
+ #cuidar .cuidar-hero-copy{padding:0!important}
+}
