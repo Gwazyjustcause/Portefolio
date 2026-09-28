@@ -616,7 +616,9 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 #painting .paint-series-head h3 em{font-family:"Instrument Serif",serif;font-weight:400}
 #painting .paint-series-head>p{font-size:15px;line-height:1.55;margin:0;max-width:520px}
 #painting .paint-grid{display:grid;gap:clamp(20px,2vw,34px);align-items:start}
-#painting .paint-grid-wdwsg{grid-template-columns:repeat(3,1fr)}
+#painting .paint-grid-wdwsg{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(44px,6vw,90px);row-gap:clamp(54px,6vw,90px)}
+#painting .paint-grid-wdwsg .wdwsg-middle{grid-column:1 / -1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,3vw,46px);width:min(78%,1050px);justify-self:center}
+#painting .paint-grid-wdwsg .wdwsg-middle figure{margin:0}
 #painting .paint-grid-three{grid-template-columns:repeat(3,1fr)}
 #painting .paint-grid-four{grid-template-columns:repeat(4,1fr)}
 #painting .paint-grid-faves{grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(18px,2.4vw,38px)}
@@ -628,12 +630,14 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 #painting .paint-grid-faves figure{margin:0!important}\n#painting .paint-grid-faves img{max-height:300px;width:100%;object-fit:contain;object-position:center;box-shadow:none}\n#painting .paint-grid-faves figure{display:grid;place-items:center;padding:20px;background:#e5e2da;min-height:340px}
 #painting .paint-grid-faves .paint-fave-feature{grid-column:2 / span 2;min-height:460px;margin-top:18px!important;padding:28px}
 #painting .paint-grid-faves .paint-fave-feature img{max-height:410px}\n#painting .paint-grid-faves figure:hover img{transform:scale(1.015);box-shadow:none}
-@media(max-width:1000px){\n #painting .paint-grid-wdwsg,#painting .paint-grid-four{grid-template-columns:repeat(2,1fr)}\n #painting .paint-grid-faves{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:1000px){\n #painting .paint-grid-wdwsg,#painting .paint-grid-four{grid-template-columns:repeat(2,1fr)}
+ #painting .paint-grid-wdwsg .wdwsg-middle{width:88%}\n #painting .paint-grid-faves{grid-template-columns:repeat(3,minmax(0,1fr))}
  #painting .paint-grid-faves .paint-fave-feature{grid-column:1 / -1;max-width:680px;width:100%;justify-self:center}
 }
 @media(max-width:650px){
  #painting .paint-series-head{grid-template-columns:1fr;gap:22px;margin-bottom:30px}
- #painting .paint-grid-wdwsg,#painting .paint-grid-three,#painting .paint-grid-four{grid-template-columns:1fr}\n #painting .paint-grid-faves{grid-template-columns:repeat(2,minmax(0,1fr))}\n #painting .paint-grid-faves img{max-height:260px}
+ #painting .paint-grid-wdwsg,#painting .paint-grid-three,#painting .paint-grid-four{grid-template-columns:1fr}
+ #painting .paint-grid-wdwsg .wdwsg-middle{grid-column:auto;grid-template-columns:1fr;width:100%}\n #painting .paint-grid-faves{grid-template-columns:repeat(2,minmax(0,1fr))}\n #painting .paint-grid-faves img{max-height:260px}
  #painting .paint-grid-faves .paint-fave-feature{grid-column:1 / -1;min-height:330px;max-width:100%;padding:18px}
  #painting .paint-grid-faves .paint-fave-feature img{max-height:300px}
  #painting .paint-series-block,#painting .paint-favourites{padding:70px 0}
