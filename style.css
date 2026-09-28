@@ -163,3 +163,21 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
  #cuidar .brand-field{min-height:430px!important;padding:25px!important}
  #cuidar .cuidar-hero-copy{padding:0!important}
 }
+
+/* Cuidar+ — real brief and colour context */
+#cuidar .brief-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;border-top:1px solid #111;border-bottom:1px solid #111}
+#cuidar .brief-facts>span{padding:18px 14px 18px 0;display:flex;flex-direction:column;gap:24px;border-right:1px solid #111}
+#cuidar .brief-facts>span+span{padding-left:14px}
+#cuidar .brief-facts>span:last-child{border-right:0}
+#cuidar .brief-facts b,#cuidar .brief-facts small{font:8px "DM Mono",monospace}
+#cuidar .brief-facts b{color:var(--care-blue);font-size:15px}
+#cuidar .colour-context{display:grid;grid-template-columns:1fr 1fr .7fr;border-top:1px solid #151515;border-bottom:1px solid #151515;margin:0 0 9vw}
+#cuidar .colour-context>div{padding:30px;min-height:250px;border-right:1px solid #151515;display:flex;flex-direction:column}
+#cuidar .colour-context>div:last-child{border-right:0}
+#cuidar .colour-context span{font:8px "DM Mono",monospace;letter-spacing:.06em}
+#cuidar .colour-context strong{font-family:"Instrument Serif",serif;font-size:34px;font-weight:400;margin-top:22px}
+#cuidar .colour-context p{font-size:12px;line-height:1.55;margin-top:auto;max-width:380px}
+#cuidar .colour-context>div:first-child{box-shadow:inset 0 7px 0 var(--care-yellow)}
+#cuidar .colour-context>div:nth-child(2){box-shadow:inset 0 7px 0 var(--care-blue)}
+#cuidar .context-sources{opacity:.58}
+@media(max-width:800px){#cuidar .brief-facts{grid-template-columns:1fr}#cuidar .brief-facts>span{border-right:0;border-bottom:1px solid #111;padding:16px 0}#cuidar .brief-facts>span+span{padding-left:0}#cuidar .colour-context{grid-template-columns:1fr}#cuidar .colour-context>div{border-right:0;border-bottom:1px solid #151515;min-height:210px}}
