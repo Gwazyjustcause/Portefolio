@@ -78,3 +78,14 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 .cuidar-title.corrected>p{font-family:"Instrument Serif",serif;font-size:clamp(32px,4vw,62px);line-height:1.02;margin:0;max-width:650px}
 .cuidar-title.corrected h2,.actual-logo-slot{display:none!important}
 @media(max-width:800px){.cuidar-title.corrected{grid-template-columns:1fr}.cuidar-title.corrected .cuidar-wordmark-source{min-height:260px;padding:40px 25px}}
+
+/* Cuidar hero reset — remove broken source crop */
+.cuidar-hero{min-height:78vh!important}
+.cuidar-title.clean{display:grid!important;grid-template-columns:1.15fr .85fr!important;gap:8vw!important;align-items:end!important;margin-top:12vw!important}
+.cuidar-title.clean>div{display:flex;flex-direction:column;align-items:flex-start}
+.cuidar-title.clean h2{display:block!important;font-family:Inter,sans-serif!important;font-size:clamp(95px,17vw,255px)!important;line-height:.72!important;letter-spacing:-.085em!important;color:#111!important;margin:0!important}
+.cuidar-title.clean h2:after{content:"";display:block;width:34%;height:12px;background:#0085ca;margin-top:45px}
+.cuidar-title.clean .source-label{font:9px "DM Mono",monospace;margin-top:18px;opacity:.55}
+.cuidar-title.clean>p{font-family:"Instrument Serif",serif;font-size:clamp(32px,4vw,58px)!important;line-height:1.02!important;margin:0!important;max-width:650px}
+.cuidar-title.corrected,.cuidar-wordmark-source,.actual-logo-slot{display:none!important}
+@media(max-width:800px){.cuidar-title.clean{grid-template-columns:1fr!important;gap:55px!important;margin-top:22vw!important}.cuidar-title.clean h2{font-size:clamp(80px,27vw,150px)!important}}
