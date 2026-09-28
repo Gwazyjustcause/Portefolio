@@ -223,3 +223,15 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 #cuidar .promo-series img{display:block;width:100%;height:auto}
 #cuidar .promo-series figcaption{font:8px "DM Mono",monospace;letter-spacing:.06em;margin-top:14px;opacity:.55}
 @media(max-width:800px){#cuidar .cuidar-promo.finished .promo-head{grid-template-columns:1fr;gap:20px}#cuidar .cuidar-promo.finished .promo-head>*{grid-column:1!important;grid-row:auto!important}}
+
+/* Cuidar+ original promotional artwork */
+#cuidar .promo-gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,1.5vw,28px);align-items:start}
+#cuidar .promo-gallery figure{margin:0;background:none;overflow:hidden}
+#cuidar .promo-gallery img{display:block;width:100%;height:auto;object-fit:contain}
+#cuidar .promo-a{grid-column:1/7}
+#cuidar .promo-b{grid-column:7/13;margin-top:8vw!important}
+#cuidar .promo-c{grid-column:2/8;margin-top:-1vw!important}
+#cuidar .promo-d{grid-column:8/13;margin-top:8vw!important}
+#cuidar .promo-e{grid-column:2/8;margin-top:-1vw!important}
+#cuidar .promo-caption{font:8px "DM Mono",monospace;letter-spacing:.06em;text-transform:uppercase;margin:22px 0 0;opacity:.5}
+@media(max-width:800px){#cuidar .promo-gallery{grid-template-columns:1fr;gap:18px}#cuidar .promo-gallery .promo-item{grid-column:1!important;margin:0!important}}
