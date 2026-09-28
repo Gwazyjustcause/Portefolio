@@ -616,7 +616,7 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 #painting .paint-series-head h3 em{font-family:"Instrument Serif",serif;font-weight:400}
 #painting .paint-series-head>p{font-size:15px;line-height:1.55;margin:0;max-width:520px}
 #painting .paint-grid{display:grid;gap:16px;align-items:start}
-#painting .paint-grid-wdwsg{grid-template-columns:repeat(4,1fr)}
+#painting .paint-grid-wdwsg{grid-template-columns:repeat(3,1fr)}
 #painting .paint-grid-three{grid-template-columns:repeat(3,1fr)}
 #painting .paint-grid-four{grid-template-columns:repeat(4,1fr)}
 #painting .paint-grid-faves{grid-template-columns:repeat(3,1fr)}
