@@ -634,7 +634,12 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
  #painting .paint-grid figcaption span{font-size:12px}
 }
 
-#painting .paint-grid-sumo{grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(14px,1.6vw,26px)}
+#painting .paint-grid-sumo{grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.6vw,26px)}
+#painting .sumo-horizontal{margin:clamp(55px,7vw,100px) auto 0;max-width:min(900px,78vw)}
+#painting .sumo-horizontal img{display:block;width:100%;height:auto;box-shadow:0 12px 28px rgba(23,23,23,.10)}
+#painting .sumo-horizontal figcaption{display:flex;justify-content:space-between;gap:30px;padding-top:13px}
+#painting .sumo-horizontal figcaption b{font:600 14px/1.3 Inter,sans-serif}
+#painting .sumo-horizontal figcaption span{font:12px/1.5 "DM Mono",monospace;opacity:.6}
 #painting .paint-grid-sumo figcaption{padding-bottom:12px}
-@media(max-width:1100px){#painting .paint-grid-sumo{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:1100px){#painting .paint-grid-sumo{grid-template-columns:repeat(2,1fr)}#painting .sumo-horizontal{max-width:90vw}}
 @media(max-width:650px){#painting .paint-grid-sumo{grid-template-columns:1fr 1fr}}
