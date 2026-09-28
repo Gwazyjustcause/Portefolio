@@ -688,3 +688,28 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 .art-lightbox-caption{position:absolute;left:3.5vw;bottom:24px;color:#fff;font:11px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.08em}
 body.lightbox-open{overflow:hidden}
 @media(max-width:650px){.art-lightbox{padding:60px 18px 70px}.art-lightbox img{max-width:100%;max-height:80vh}.art-lightbox-close{right:12px}.art-lightbox-caption{left:20px;bottom:22px}}
+
+/* Photography — selected archive */
+#photography.photography-editorial{padding:clamp(90px,9vw,150px) clamp(22px,5vw,80px);background:#f0ede5;color:#141414}
+#photography .photo-intro{padding-bottom:clamp(80px,10vw,150px);border-bottom:1px solid #141414}
+#photography .photo-intro h2{font:500 clamp(72px,12vw,190px)/.82 Inter,sans-serif;letter-spacing:-.075em;margin:clamp(45px,7vw,90px) 0}
+#photography .photo-lead{display:grid;grid-template-columns:1.2fr .8fr;gap:7vw;align-items:end}
+#photography .photo-lead p{font:400 clamp(24px,3vw,46px)/1.12 "Instrument Serif",serif;max-width:850px;margin:0}
+#photography .photo-lead>span{font:11px "DM Mono",monospace;letter-spacing:.08em;justify-self:end}
+#photography .photo-series{padding:clamp(80px,9vw,145px) 0;border-bottom:1px solid #141414}
+#photography .photo-series-head{display:grid;grid-template-columns:1fr 1fr;gap:7vw;align-items:start;margin-bottom:clamp(40px,5vw,75px)}
+#photography .photo-series-head h3{font:500 clamp(38px,5vw,76px)/.95 Inter,sans-serif;letter-spacing:-.055em;margin:15px 0 0}
+#photography .photo-series-head>p{font-size:16px;line-height:1.65;max-width:620px;margin:0}
+#photography .photo-series.airsoft .photo-series-head>p{font:400 clamp(20px,2vw,28px)/1.5 "Instrument Serif",serif;max-width:760px}
+#photography .photo-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(10px,1.2vw,18px);align-items:start}
+#photography .photo-item{margin:0;grid-column:span 4;overflow:hidden}
+#photography .photo-item.p1,#photography .photo-item.p4{grid-column:span 7}
+#photography .photo-item.p2,#photography .photo-item.p5{grid-column:span 5}
+#photography .photo-item img{display:block;width:100%;height:auto;transition:transform .3s ease,filter .3s ease}
+#photography .photo-item:hover img{transform:scale(1.012)}
+#photography .photo-series:nth-of-type(even) .photo-item.p1{grid-column:span 5}
+#photography .photo-series:nth-of-type(even) .photo-item.p2{grid-column:span 7}
+#photography .photo-series.airsoft{background:#141414;color:#f0ede5;margin-left:calc(-1 * clamp(22px,5vw,80px));margin-right:calc(-1 * clamp(22px,5vw,80px));padding-left:clamp(22px,5vw,80px);padding-right:clamp(22px,5vw,80px);border:0}
+#photography .photo-series.airsoft .photo-series-head{border-bottom:1px solid rgba(240,237,229,.25);padding-bottom:clamp(35px,4vw,60px)}
+@media(max-width:800px){#photography.photography-editorial{padding:80px 22px}#photography .photo-intro h2{font-size:clamp(66px,20vw,110px)}#photography .photo-lead,#photography .photo-series-head{grid-template-columns:1fr;gap:30px}#photography .photo-lead>span{justify-self:start}#photography .photo-item,#photography .photo-item.p1,#photography .photo-item.p2,#photography .photo-item.p4,#photography .photo-item.p5,#photography .photo-series:nth-of-type(even) .photo-item.p1,#photography .photo-series:nth-of-type(even) .photo-item.p2{grid-column:span 6}#photography .photo-series.airsoft{margin-left:-22px;margin-right:-22px;padding-left:22px;padding-right:22px}}
+@media(max-width:520px){#photography .photo-grid{grid-template-columns:1fr}#photography .photo-item,#photography .photo-item.p1,#photography .photo-item.p2,#photography .photo-item.p4,#photography .photo-item.p5,#photography .photo-series:nth-of-type(even) .photo-item.p1,#photography .photo-series:nth-of-type(even) .photo-item.p2{grid-column:1}}
