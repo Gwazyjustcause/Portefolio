@@ -522,3 +522,48 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
   #adam .page-map a b{font-size:15px!important}
   #adam .page-map a>span,#adam .page-map a>span>span{font-size:12px!important}
 }
+
+/* === Display-size restraint pass === */
+@media(min-width:801px){
+  /* Case-study display copy: retain impact without dominating 1080p screens */
+  #adam .step-copy h3{
+    font-size:clamp(38px,3.45vw,56px)!important;
+    line-height:1.02!important;
+    max-width:620px!important;
+  }
+  #adam .page-title h3{
+    font-size:clamp(40px,3.8vw,60px)!important;
+    line-height:1.02!important;
+    max-width:900px!important;
+  }
+  #cuidar .cs-copy h3,
+  #cuidar .system-head h3,
+  #cuidar .promo-head h3{
+    font-size:clamp(36px,3.4vw,54px)!important;
+    line-height:1.04!important;
+  }
+
+  /* Secondary statement sizes */
+  #adam .problem-grid b{font-size:34px!important}
+  #adam .faq-study b{font-size:52px!important}
+  #adam .directory-study b{font-size:28px!important}
+  #adam .dash-head strong{font-size:30px!important}
+  #adam .member-card-study>b{font-size:34px!important}
+  #cuidar .concept-build>div>b{font-size:32px!important}
+  #cuidar .swatches span{font-size:26px!important}
+  #cuidar .name-reading b{font-size:30px!important}
+
+  /* Prevent ordinary copy from looking like a second headline */
+  #adam .decision>span{font-size:15px!important;line-height:1.5!important}
+  #adam .page-note,
+  #adam .reflection>p:last-of-type,
+  #cuidar .type-rule>p,
+  #cuidar .cuidar-reflection>p:last-child{font-size:15px!important}
+}
+@media(max-width:800px){
+  #adam .step-copy h3,#adam .page-title h3,
+  #cuidar .cs-copy h3,#cuidar .system-head h3,#cuidar .promo-head h3{
+    font-size:clamp(32px,9vw,46px)!important;
+    line-height:1.03!important;
+  }
+}
