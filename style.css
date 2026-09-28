@@ -677,3 +677,14 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 #painting .paint-grid-sumo figcaption{padding-bottom:12px}
 @media(max-width:1100px){#painting .paint-grid-sumo{grid-template-columns:repeat(2,minmax(0,280px));justify-content:center}#painting .sumo-horizontal{max-width:min(620px,86vw)}}
 @media(max-width:650px){#painting .paint-grid-sumo{grid-template-columns:1fr 1fr}#painting .paint-grid-sumo figure,#painting .paint-grid-sumo img{width:100%;max-width:260px}}
+
+/* Painting lightbox */
+.art-zoomable{cursor:zoom-in}
+.art-lightbox{position:fixed;inset:0;z-index:200;background:rgba(14,14,14,.94);display:flex;align-items:center;justify-content:center;padding:58px 5vw 72px;opacity:0;visibility:hidden;transition:opacity .2s ease,visibility .2s ease}
+.art-lightbox.open{opacity:1;visibility:visible}
+.art-lightbox img{display:block;max-width:92vw;max-height:84vh;width:auto;height:auto;object-fit:contain;box-shadow:0 24px 80px rgba(0,0,0,.35);transform:scale(.985);transition:transform .2s ease}
+.art-lightbox.open img{transform:scale(1)}
+.art-lightbox-close{position:absolute;top:22px;right:3.5vw;border:0;background:transparent;color:#fff;font:300 38px/1 Inter,sans-serif;cursor:pointer;padding:8px}
+.art-lightbox-caption{position:absolute;left:3.5vw;bottom:24px;color:#fff;font:11px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.08em}
+body.lightbox-open{overflow:hidden}
+@media(max-width:650px){.art-lightbox{padding:60px 18px 70px}.art-lightbox img{max-width:100%;max-height:80vh}.art-lightbox-close{right:12px}.art-lightbox-caption{left:20px;bottom:22px}}
