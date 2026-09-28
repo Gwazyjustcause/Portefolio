@@ -638,3 +638,8 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
  #painting .paint-series-block,#painting .paint-favourites{padding:70px 0}
  #painting .paint-grid figcaption span{font-size:12px}
 }
+
+#painting .paint-grid-sumo{grid-template-columns:repeat(5,minmax(0,1fr))}
+#painting .paint-grid-sumo figcaption{padding-bottom:12px}
+@media(max-width:1100px){#painting .paint-grid-sumo{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:650px){#painting .paint-grid-sumo{grid-template-columns:1fr 1fr}}
