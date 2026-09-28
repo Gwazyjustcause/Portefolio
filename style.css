@@ -265,3 +265,34 @@ header nav .lang-switch span{display:inline!important;color:#171717!important;op
 @media(max-width:650px){
  #cuidar .promo-gallery{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
 }
+
+/* Readability pass — case-study supporting text */
+#adam .eyebrow,#cuidar .eyebrow,
+#adam .source-label,#cuidar .source-label,
+#adam figcaption,#cuidar figcaption,
+#adam .meta-label,#cuidar .meta-label,
+#adam [class*="label"],#cuidar [class*="label"]{
+  font-size:clamp(11px,.72vw,13px)!important;
+  line-height:1.45!important;
+}
+#adam p,#cuidar p{
+  font-size:clamp(15px,.95vw,18px);
+  line-height:1.55;
+}
+#adam .eyebrow,#cuidar .eyebrow,
+#adam .source-label,#cuidar .source-label,
+#adam figcaption,#cuidar figcaption{
+  letter-spacing:.045em!important;
+}
+#adam .case-meta,#cuidar .case-meta,
+#adam .research-card,#cuidar .research-card,
+#adam .context-card,#cuidar .context-card{
+  font-size:clamp(13px,.82vw,16px)!important;
+  line-height:1.55!important;
+}
+#cuidar .colour-context-grid p,#cuidar .colour-context-grid span,
+#cuidar .colour-context-grid strong,
+#cuidar .colour-context-grid div{
+  font-size:max(12px,.72vw)!important;
+  line-height:1.5!important;
+}
