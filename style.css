@@ -703,7 +703,7 @@ body.lightbox-open{overflow:hidden}
 #photography .photo-series.airsoft .photo-series-head>p{font:400 clamp(20px,2vw,28px)/1.5 "Instrument Serif",serif;max-width:760px}
 
 /* Calm, consistent contact-sheet layout: no artificial hierarchy between photographs. */
-#photography .photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(22px,2.4vw,38px);align-items:start}
+#photography .photo-grid{columns:3;column-gap:clamp(22px,2.4vw,38px)}
 #photography .photo-item,
 #photography .photo-item.p1,
 #photography .photo-item.p2,
@@ -711,12 +711,12 @@ body.lightbox-open{overflow:hidden}
 #photography .photo-item.p4,
 #photography .photo-item.p5,
 #photography .photo-series:nth-of-type(even) .photo-item.p1,
-#photography .photo-series:nth-of-type(even) .photo-item.p2{grid-column:auto;margin:0;overflow:visible}
-#photography .photo-item img{display:block;width:100%;height:auto;max-height:620px;object-fit:contain;object-position:center;transition:transform .25s ease,box-shadow .25s ease}
+#photography .photo-series:nth-of-type(even) .photo-item.p2{display:inline-block;width:100%;margin:0 0 clamp(22px,2.4vw,38px);break-inside:avoid;overflow:visible}
+#photography .photo-item img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center;transition:transform .25s ease,box-shadow .25s ease}
 #photography .photo-item:hover img{transform:translateY(-3px);box-shadow:0 16px 34px rgba(20,20,20,.12)}
 #photography .photo-series.airsoft{background:#141414;color:#f0ede5;margin-left:calc(-1 * clamp(22px,5vw,80px));margin-right:calc(-1 * clamp(22px,5vw,80px));padding-left:clamp(22px,5vw,80px);padding-right:clamp(22px,5vw,80px);border:0}
 #photography .photo-series.airsoft .photo-series-head{border-bottom:1px solid rgba(240,237,229,.25);padding-bottom:clamp(35px,4vw,60px)}
-@media(max-width:900px){#photography .photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){#photography .photo-grid{columns:2}}
 @media(max-width:800px){#photography.photography-editorial{padding:80px 22px}#photography .photo-intro h2{font-size:clamp(66px,20vw,110px)}#photography .photo-lead,#photography .photo-series-head{grid-template-columns:1fr;gap:30px}#photography .photo-lead>span{justify-self:start}#photography .photo-series.airsoft{margin-left:-22px;margin-right:-22px;padding-left:22px;padding-right:22px}}
-@media(max-width:560px){#photography .photo-grid{grid-template-columns:1fr;gap:28px}#photography .photo-item img{max-height:none}}
+@media(max-width:560px){#photography .photo-grid{columns:1;column-gap:0}#photography .photo-item{margin-bottom:28px}}
 
