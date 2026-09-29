@@ -829,3 +829,26 @@ body.lightbox-open{overflow:hidden}
 .back-to-top:hover{background:#d9ff45}
 .back-to-top:focus-visible{outline:2px solid #d9ff45;outline-offset:3px}
 @media(max-width:650px){.back-to-top{left:16px;bottom:16px;width:42px;height:42px}}
+
+/* Tools — product and workflow archive */
+#tools.tools-case{background:#e8e4da;color:#141414;padding:clamp(95px,9vw,155px) clamp(48px,6.5vw,125px)}
+#tools .tools-head{display:grid;grid-template-columns:150px minmax(0,1.25fr) minmax(280px,.55fr);gap:clamp(35px,6vw,110px);align-items:end;padding-bottom:clamp(80px,9vw,145px);border-bottom:1px solid #141414}
+#tools .tools-index,#tools .tool-no,#tools .tool-card-top,#tools .tool-tags{font:9px "DM Mono",monospace;letter-spacing:.08em}
+#tools .tools-head h2{font:400 clamp(62px,7.5vw,128px)/.84 "Instrument Serif",serif;letter-spacing:-.055em;margin:0}
+#tools .tools-intro p{font:14px/1.7 Inter,sans-serif;margin:0;max-width:470px}
+#tools .tool-feature{display:grid;grid-template-columns:minmax(180px,.42fr) minmax(350px,.95fr) minmax(300px,.7fr);gap:clamp(35px,6vw,105px);align-items:center;padding:clamp(70px,8vw,125px) 0;border-bottom:1px solid #141414}
+#tools .tool-feature-mark{display:grid;place-items:center;min-height:300px;background:#ffe4c7;border-radius:3px}
+#tools .tool-feature-mark img{width:min(58%,210px);height:auto}
+#tools .tool-feature-main h3{font:600 clamp(44px,5vw,82px)/.9 Inter,sans-serif;letter-spacing:-.06em;margin:18px 0 25px}
+#tools .tool-big{font:400 clamp(31px,3.3vw,54px)/1 "Instrument Serif",serif;margin:0;max-width:550px}
+#tools .tool-feature-copy>p,#tools .tool-card>p{font:14px/1.7 Inter,sans-serif;margin:0 0 30px;max-width:520px}
+#tools .tool-tags{display:flex;flex-wrap:wrap;gap:7px}
+#tools .tool-tags span{border:1px solid rgba(20,20,20,.35);border-radius:999px;padding:8px 11px}
+#tools .tools-grid{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid #141414}
+#tools .tool-card{padding:clamp(45px,5vw,75px) clamp(28px,3.5vw,58px) clamp(55px,6vw,90px) 0;border-right:1px solid rgba(20,20,20,.3)}
+#tools .tool-card+ .tool-card{padding-left:clamp(28px,3.5vw,58px)}
+#tools .tool-card:last-child{border-right:0;padding-right:0}
+#tools .tool-card-top{display:flex;justify-content:space-between;gap:20px;opacity:.65;margin-bottom:55px}
+#tools .tool-card h3{font:500 clamp(32px,3.2vw,52px)/.98 "Instrument Serif",serif;letter-spacing:-.035em;margin:0 0 30px}
+@media(max-width:950px){#tools .tools-head{grid-template-columns:90px 1fr}#tools .tools-intro{grid-column:2}#tools .tool-feature{grid-template-columns:220px 1fr}#tools .tool-feature-copy{grid-column:2}#tools .tools-grid{grid-template-columns:1fr}#tools .tool-card,#tools .tool-card+ .tool-card{padding:55px 0;border-right:0;border-bottom:1px solid rgba(20,20,20,.3)}}
+@media(max-width:650px){#tools.tools-case{padding:75px 20px}#tools .tools-head{grid-template-columns:1fr;gap:30px}#tools .tools-index,#tools .tools-intro{grid-column:1}#tools .tools-head h2{font-size:62px}#tools .tool-feature{grid-template-columns:1fr;gap:35px}#tools .tool-feature-mark{min-height:230px}#tools .tool-feature-copy{grid-column:1}#tools .tool-card-top{margin-bottom:35px}}
