@@ -765,3 +765,22 @@ body.lightbox-open{overflow:hidden}
 @media(max-width:1050px){[id="3d"] .sumo3d-stage{grid-template-columns:.8fr 1.2fr}[id="3d"] .sumo3d-details{grid-column:1/-1;grid-template-columns:repeat(3,1fr)}[id="3d"] .sumo3d-card-grid{grid-template-columns:repeat(5,minmax(120px,1fr));overflow-x:auto;padding-bottom:12px}}
 @media(max-width:700px){[id="3d"] .sumo3d-stage{grid-template-columns:1fr;padding:70px 22px 45px}[id="3d"] .sumo3d-copy{padding-top:0}[id="3d"] .sumo3d-hero{grid-row:2}[id="3d"] .sumo3d-details{grid-template-columns:repeat(3,1fr)}[id="3d"] .sumo3d-published{padding:0 22px 70px}[id="3d"] .sumo3d-published-head{align-items:flex-start;flex-direction:column}[id="3d"] .sumo3d-card-grid{grid-template-columns:repeat(2,1fr);overflow:visible}[id="3d"] .sumo3d-card span{white-space:normal}}
 
+
+/* About — editorial profile */
+#about.about{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(480px,1.28fr);gap:clamp(55px,8vw,150px);padding:clamp(95px,10vw,170px) var(--pad);border-top:1px solid var(--ink);align-items:start}
+#about .about-title{position:sticky;top:110px}
+#about .about-index{font:10px "DM Mono",monospace;margin:26px 0 40px;opacity:.55}
+#about .about-title h2{font:500 clamp(58px,7vw,116px)/.82 "Instrument Serif",serif;letter-spacing:-.055em;margin:0;max-width:700px}
+#about .about-copy{padding-top:52px}
+#about .about-lead{font:500 clamp(26px,3vw,48px)/1.05 Inter,sans-serif;letter-spacing:-.04em;max-width:900px;margin:0 0 clamp(50px,6vw,90px)}
+#about .about-body{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(30px,4vw,70px);border-top:1px solid rgba(20,20,20,.28);padding-top:24px}
+#about .about-body p{font-size:14px;line-height:1.65;margin:0;max-width:470px}
+#about .about-statement{font:500 clamp(32px,4.5vw,72px)/.92 Inter,sans-serif;letter-spacing:-.05em;margin:clamp(70px,8vw,120px) 0 40px;max-width:900px}
+#about .about-meta{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+#about .about-meta div{padding:14px 10px 16px 0;border-right:1px solid rgba(20,20,20,.2)}
+#about .about-meta div:last-child{border-right:0;padding-left:10px}
+#about .about-meta span,#about .about-meta b{display:block;font:9px "DM Mono",monospace;letter-spacing:.07em}
+#about .about-meta span{opacity:.45;margin-bottom:18px}
+#about .about-meta b{font-weight:500}
+@media(max-width:900px){#about.about{grid-template-columns:1fr;gap:45px}#about .about-title{position:static}#about .about-copy{padding-top:0}#about .about-title h2{font-size:clamp(62px,14vw,100px)}#about .about-body{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){#about.about{padding-top:80px;padding-bottom:90px}#about .about-body{grid-template-columns:1fr}#about .about-meta{grid-template-columns:1fr 1fr}#about .about-meta div{border-bottom:1px solid rgba(20,20,20,.2)}#about .about-lead{font-size:28px}#about .about-statement{font-size:38px}}
