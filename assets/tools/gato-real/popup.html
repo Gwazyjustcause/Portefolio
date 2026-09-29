@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gato das Horas</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-avatar"><img id="brandCat" src="assets/mascot/gato.png" alt=""></div>
+        <div style="min-width:0"><h1>Gato das Horas</h1><p id="todayLabel"></p></div>
+      </div>
+      <button class="hud bo" id="hudBo" type="button" title="Banco de horas (BO)"></button>
+      <button class="hud cats" id="hudCats" type="button" title="Álbum de gatos"></button>
+      <button class="icon-btn" id="settingsBtn" type="button" aria-label="Configurações" title="Configurações"></button>
+    </header>
+
+    <main id="view" tabindex="-1" aria-live="polite"></main>
+
+    <nav class="dock" id="dock" aria-label="Secções">
+      <button type="button" data-tab="home"></button>
+      <button type="button" data-tab="week"></button>
+      <button type="button" data-tab="cats"></button>
+      <button type="button" data-tab="vac"></button>
+    </nav>
+
+    <div id="layer"></div>
+    <div id="toast" class="toast hidden" role="status"></div>
+  </div>
+  <script src="core.js"></script>
+  <script src="art.js"></script>
+  <script src="cat-names.js"></script>
+  <script src="cats.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

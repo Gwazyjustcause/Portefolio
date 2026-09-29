@@ -1,0 +1,25 @@
+#work-hour-cat-overlay {
+  position: fixed; z-index: 2147483647; right: 22px; bottom: 22px; display: flex; align-items: center; gap: 12px;
+  width: min(430px, calc(100vw - 32px)); padding: 13px 15px 13px 12px; color: #372b36;
+  background: #fff8fb; border: 1px solid #f0d2e3; border-radius: 20px; box-shadow: 0 14px 40px #5424432b;
+  font: 14px/1.25 system-ui, -apple-system, sans-serif; animation: whc-in .25s ease-out;
+}
+#work-hour-cat-overlay .whc-cat { position: relative; flex: 0 0 56px; width: 56px; height: 52px; background: #f4a873; border-radius: 48% 48% 44% 44%; }
+#work-hour-cat-overlay .whc-ear { position: absolute; top: -8px; width: 21px; height: 21px; background: #f4a873; transform: rotate(45deg); border-radius: 5px 12px 5px 12px; }
+#work-hour-cat-overlay .left { left: 5px; } #work-hour-cat-overlay .right { right: 5px; }
+#work-hour-cat-overlay .whc-face { position:absolute; inset: 13px 9px 7px; background:#ffd0a9; border-radius: 50%; text-align:center; }
+#work-hour-cat-overlay .whc-face i { display:inline-block; width:5px; height:7px; margin: 0 8px; background:#49343b; border-radius:50%; }
+#work-hour-cat-overlay .whc-face b { display:block; font-size:18px; font-weight:500; margin-top:-1px; }
+#work-hour-cat-overlay .whc-copy { display:flex; flex:1; flex-direction:column; gap:4px; } #work-hour-cat-overlay strong { font-size:15px; }
+#work-hour-cat-overlay .whc-copy span { color:#766675; font-size:12px; }
+#work-hour-cat-overlay button { border:0; cursor:pointer; font:inherit; } #work-hour-cat-overlay .whc-add { padding:9px 11px; color:#fff; background:#b85b87; border-radius:11px; font-weight:700; white-space:nowrap; }
+#work-hour-cat-overlay .whc-close { align-self:flex-start; padding:0 0 0 3px; color:#a58798; background:transparent; font-size:20px; }
+@keyframes whc-in { from { transform:translateY(14px); opacity:0; } to { transform:translateY(0); opacity:1; } }
+#work-hour-cat-overlay .whc-cat-image { width:60px; height:60px; object-fit:contain; flex:0 0 60px; }
+#work-hour-cat-overlay .whc-cat-image { animation: whc-cat-hop 1.8s ease-in-out infinite; }
+#work-hour-cat-overlay .whc-add { animation: whc-button-pulse 2.8s ease-in-out infinite; }
+@keyframes whc-cat-hop { 0%,100% { transform:translateY(0) rotate(-2deg); } 50% { transform:translateY(-4px) rotate(2deg); } }
+@keyframes whc-button-pulse { 0%,78%,100% { box-shadow:0 0 0 0 #b85b8700; } 86% { box-shadow:0 0 0 5px #b85b8730; } }
+#work-hour-cat-reward{position:fixed;z-index:2147483647;right:22px;bottom:22px;width:210px;padding:16px 16px 14px;color:#4a3049;text-align:center;background:linear-gradient(145deg,#fff9f0,#fff0f7);border:2px solid #fff;border-radius:22px;box-shadow:0 14px 40px #54244345,0 5px 0 #d9b3c8;font:14px/1.25 system-ui,-apple-system,sans-serif;animation:whc-reward-in .45s cubic-bezier(.17,.89,.32,1.4)}
+#work-hour-cat-reward img{display:block;width:120px;height:120px;margin:-5px auto 4px;object-fit:contain;animation:whc-reward-cat .7s cubic-bezier(.17,.89,.32,1.4)}
+#work-hour-cat-reward strong,#work-hour-cat-reward span{display:block}#work-hour-cat-reward strong{font-size:16px}#work-hour-cat-reward span{margin-top:4px;color:#8f6c84;font-size:12px}#work-hour-cat-reward button{position:absolute;right:9px;top:7px;border:0;background:transparent;color:#aa88a0;font-size:20px;cursor:pointer}.whc-reward-sparkles{position:absolute;left:0;right:0;top:8px;color:#ca76a2;font-size:20px;letter-spacing:22px;animation:whc-reward-sparkle 1s ease-in-out infinite alternate}@keyframes whc-reward-in{from{opacity:0;transform:translateY(20px) scale(.9)}to{opacity:1;transform:none}}@keyframes whc-reward-cat{0%{transform:scale(.5) rotate(-12deg)}70%{transform:scale(1.08) rotate(5deg)}100%{transform:none}}@keyframes whc-reward-sparkle{from{opacity:.45;transform:scale(.9)}to{opacity:1;transform:scale(1.1)}}
