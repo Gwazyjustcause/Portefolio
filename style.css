@@ -722,29 +722,31 @@ body.lightbox-open{overflow:hidden}
 
 
 /* Sumo busts — 3D sculpture */
-#3d.sumo-3d{padding:clamp(90px,9vw,150px) clamp(22px,5vw,80px);background:#141414;color:#f0ede5}
-#3d .sumo3d-intro{padding-bottom:clamp(80px,9vw,140px)}
-#3d .sumo3d-intro h2{font:500 clamp(78px,13vw,200px)/.78 Inter,sans-serif;letter-spacing:-.08em;margin:clamp(50px,7vw,95px) 0}
-#3d .sumo3d-intro h2 em{font-family:"Instrument Serif",serif;font-weight:400}
-#3d .sumo3d-lead{display:grid;grid-template-columns:1.25fr .75fr;gap:7vw;align-items:end}
-#3d .sumo3d-lead p{font:400 clamp(25px,3.2vw,48px)/1.1 "Instrument Serif",serif;max-width:900px;margin:0}
-#3d .sumo3d-lead a{justify-self:end;color:inherit;font:11px "DM Mono",monospace;letter-spacing:.08em;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:5px}
-#3d .sumo3d-feature{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.5vw,24px);padding:clamp(55px,7vw,100px) 0;border-top:1px solid rgba(240,237,229,.25)}
-#3d .sumo3d-feature figure{margin:0;background:#242424}
-#3d .sumo3d-feature img{display:block;width:100%;height:auto}
-#3d .sumo3d-feature-copy{grid-column:2;padding-top:28px}
-#3d .sumo3d-feature-copy>span,#3d .sumo3d-models-head>span{font:11px "DM Mono",monospace;letter-spacing:.1em}
-#3d .sumo3d-feature-copy p{font-size:16px;line-height:1.65;max-width:620px}
-#3d .sumo3d-context{display:grid;grid-template-columns:1fr 1fr;gap:7vw;padding:clamp(80px,9vw,145px) 0;border-top:1px solid rgba(240,237,229,.25)}
-#3d .sumo3d-context h3{font:500 clamp(38px,5vw,74px)/.98 Inter,sans-serif;letter-spacing:-.055em;margin:18px 0 0;max-width:760px}
-#3d .sumo3d-context>p{font-size:17px;line-height:1.7;max-width:620px;margin:0}
-#3d .sumo3d-models{padding-top:clamp(70px,8vw,120px);border-top:1px solid rgba(240,237,229,.25)}
-#3d .sumo3d-models-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}
-#3d .sumo3d-models-head p{font:400 30px "Instrument Serif",serif;margin:0}
-#3d .sumo3d-links{border-top:1px solid rgba(240,237,229,.25)}
-#3d .sumo3d-links a{display:grid;grid-template-columns:70px 1fr auto;align-items:center;gap:20px;color:inherit;text-decoration:none;padding:20px 4px;border-bottom:1px solid rgba(240,237,229,.25);transition:padding .2s ease,background .2s ease}
-#3d .sumo3d-links a span,#3d .sumo3d-links a i{font:10px "DM Mono",monospace;opacity:.55;font-style:normal}
-#3d .sumo3d-links a b{font:500 clamp(20px,2.4vw,34px) Inter,sans-serif;letter-spacing:-.035em}
-#3d .sumo3d-links a:hover{padding-left:14px;padding-right:14px;background:#d9ff45;color:#141414}
-#3d .sumo3d-credit{font:11px/1.6 "DM Mono",monospace;opacity:.6;max-width:720px;margin:35px 0 0}
-@media(max-width:760px){#3d.sumo-3d{padding:80px 22px}#3d .sumo3d-intro h2{font-size:clamp(70px,22vw,120px)}#3d .sumo3d-lead,#3d .sumo3d-context{grid-template-columns:1fr;gap:35px}#3d .sumo3d-lead a{justify-self:start}#3d .sumo3d-feature{grid-template-columns:1fr}#3d .sumo3d-feature-copy{grid-column:1}#3d .sumo3d-links a{grid-template-columns:42px 1fr auto}}
+#3d.sumo-3d{padding:0;background:#080808;color:#e9e5dc}
+#3d .sumo3d-stage{display:grid;grid-template-columns:minmax(280px,.82fr) minmax(420px,1.25fr) minmax(190px,.48fr);gap:clamp(22px,3vw,54px);padding:clamp(72px,7vw,120px) clamp(28px,3.5vw,64px) clamp(48px,5vw,82px);align-items:start}
+#3d .sumo3d-copy{padding-top:18px}
+#3d .sumo3d-num,#3d .sumo3d-kicker,#3d .sumo3d-credit,#3d .sumo3d-published-head,#3d .sumo3d-card span{font-family:"DM Mono",monospace;letter-spacing:.09em}
+#3d .sumo3d-num{font-size:12px;margin:0 0 26px;opacity:.72}
+#3d .sumo3d-copy h2{font:500 clamp(40px,4.2vw,72px)/.92 Inter,sans-serif;letter-spacing:-.045em;margin:0 0 12px;color:#f0ede5}
+#3d .sumo3d-kicker{font-size:11px;margin:0 0 18px;opacity:.82}
+#3d .sumo3d-rule{width:24px;height:1px;background:#e9e5dc;opacity:.55;margin:18px 0}
+#3d .sumo3d-copy>p:not(.sumo3d-num):not(.sumo3d-kicker):not(.sumo3d-credit){font-size:14px;line-height:1.55;max-width:500px;margin:0 0 14px;color:#d5d1c9}
+#3d .sumo3d-credit{font-size:9px;line-height:1.65;text-transform:uppercase;max-width:430px;opacity:.62;margin:0}
+#3d .sumo3d-hero{margin:0;align-self:center;background:#111;overflow:hidden}
+#3d .sumo3d-hero img{display:block;width:100%;height:auto}
+#3d .sumo3d-details{display:grid;gap:10px}
+#3d .sumo3d-details figure{margin:0;border:1px solid #292929;background:#111;overflow:hidden}
+#3d .sumo3d-details img{display:block;width:100%;aspect-ratio:1.55/1;object-fit:cover}
+#3d .sumo3d-details figure:nth-child(2) img{object-position:70% 40%}
+#3d .sumo3d-details figure:nth-child(3) img{object-position:50% 72%}
+#3d .sumo3d-published{padding:0 clamp(28px,3.5vw,64px) clamp(72px,7vw,120px)}
+#3d .sumo3d-published-head{display:flex;justify-content:space-between;gap:25px;align-items:center;border-top:1px solid #323232;padding:18px 0;font-size:10px}
+#3d .sumo3d-published-head a{color:inherit;text-decoration:none}
+#3d .sumo3d-card-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(10px,1.2vw,18px)}
+#3d .sumo3d-card{display:block;color:inherit;text-decoration:none;min-width:0}
+#3d .sumo3d-card img{display:block;width:100%;aspect-ratio:1/1.08;object-fit:cover;background:#111;border:1px solid #292929;filter:brightness(.88);transition:filter .2s ease,transform .2s ease}
+#3d .sumo3d-card span{display:block;font-size:9px;line-height:1.4;margin-top:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#3d .sumo3d-card:hover img{filter:brightness(1);transform:translateY(-2px)}
+@media(max-width:1050px){#3d .sumo3d-stage{grid-template-columns:.8fr 1.2fr}#3d .sumo3d-details{grid-column:1/-1;grid-template-columns:repeat(3,1fr)}#3d .sumo3d-card-grid{grid-template-columns:repeat(5,minmax(120px,1fr));overflow-x:auto;padding-bottom:12px}}
+@media(max-width:700px){#3d .sumo3d-stage{grid-template-columns:1fr;padding:70px 22px 45px}#3d .sumo3d-copy{padding-top:0}#3d .sumo3d-hero{grid-row:2}#3d .sumo3d-details{grid-template-columns:repeat(3,1fr)}#3d .sumo3d-published{padding:0 22px 70px}#3d .sumo3d-published-head{align-items:flex-start;flex-direction:column}#3d .sumo3d-card-grid{grid-template-columns:repeat(2,1fr);overflow:visible}#3d .sumo3d-card span{white-space:normal}}
+
