@@ -714,16 +714,19 @@ body.lightbox-open{overflow:hidden}
 #photography .photo-series:nth-of-type(even) .photo-item.p2{display:inline-block;width:100%;margin:0 0 clamp(22px,2.4vw,38px);break-inside:avoid;overflow:visible}
 #photography .photo-item img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center;transition:transform .25s ease,box-shadow .25s ease}
 #photography .photo-item:hover img{transform:translateY(-3px);box-shadow:0 16px 34px rgba(20,20,20,.12)}
-#photography .photo-series.airsoft{background:#141414;color:#f0ede5;margin-left:calc(-1 * clamp(22px,5vw,80px));margin-right:calc(-1 * clamp(22px,5vw,80px));padding-left:clamp(22px,5vw,80px);padding-right:clamp(22px,5vw,80px);border:0}
-#photography .photo-series.airsoft .photo-series-head{border-bottom:1px solid rgba(240,237,229,.25);padding-bottom:clamp(35px,4vw,60px)}
+#photography .photo-series.airsoft{background:#141414;color:#f0ede5;margin-left:calc(-1 * clamp(22px,5vw,80px));margin-right:calc(-1 * clamp(22px,5vw,80px));margin-bottom:calc(-1 * clamp(90px,9vw,150px));padding:clamp(80px,9vw,145px) clamp(22px,5vw,80px) clamp(42px,4vw,64px);border:0}
+#photography .photo-series.airsoft .photo-series-head{border-bottom:1px solid rgba(240,237,229,.25);padding-bottom:clamp(32px,3.5vw,52px);margin-bottom:clamp(32px,4vw,56px)}
 @media(max-width:900px){#photography .photo-grid{columns:2}}
 @media(max-width:800px){#photography.photography-editorial{padding:80px 22px}#photography .photo-intro h2{font-size:clamp(66px,20vw,110px)}#photography .photo-lead,#photography .photo-series-head{grid-template-columns:1fr;gap:30px}#photography .photo-lead>span{justify-self:start}#photography .photo-series.airsoft{margin-left:-22px;margin-right:-22px;padding-left:22px;padding-right:22px}}
 @media(max-width:560px){#photography .photo-grid{columns:1;column-gap:0}#photography .photo-item{margin-bottom:28px}}
 
 
+
+/* Performance: skip rendering deep sections until they approach the viewport. */
+#painting .paint-series,#photography .photo-series,[id="3d"] .sumo3d-published{content-visibility:auto;contain-intrinsic-size:auto 900px}
 /* Sumo busts — 3D sculpture */
 [id="3d"].sumo-3d{padding:0;background:#080808;color:#e9e5dc}
-[id="3d"] .sumo3d-stage{display:grid;grid-template-columns:minmax(300px,.8fr) minmax(500px,1.4fr) minmax(250px,.62fr);gap:clamp(30px,3.8vw,70px);padding:clamp(78px,7vw,125px) clamp(28px,3.5vw,64px) clamp(62px,6vw,96px);align-items:start}
+[id="3d"] .sumo3d-stage{display:grid;grid-template-columns:minmax(300px,.8fr) minmax(500px,1.4fr) minmax(250px,.62fr);gap:clamp(30px,3.8vw,70px);padding:clamp(64px,6vw,105px) clamp(28px,3.5vw,64px) clamp(62px,6vw,96px);align-items:start}
 [id="3d"] .sumo3d-copy{padding-top:18px}
 [id="3d"] .sumo3d-num,[id="3d"] .sumo3d-kicker,[id="3d"] .sumo3d-credit,[id="3d"] .sumo3d-published-head,[id="3d"] .sumo3d-card span{display:block;font:9px/1.4 "DM Mono",monospace;letter-spacing:.08em;margin:0}
 [id="3d"] .sumo3d-num{font-size:12px;margin:0 0 26px;opacity:.72}
