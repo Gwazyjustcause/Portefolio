@@ -775,16 +775,16 @@ body.lightbox-open{overflow:hidden}
 #about .about-intro{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(45px,8vw,140px);padding:clamp(70px,8vw,125px) 0}
 #about .about-lead{font:500 clamp(32px,4.2vw,70px)/1.02 Inter,sans-serif;letter-spacing:-.05em;margin:0;max-width:900px}
 #about .about-intro-small{font:14px/1.7 Inter,sans-serif;margin:8px 0 0;max-width:480px}
-#about .about-timeline{border-top:1px solid var(--ink)}
-#about .about-chapter{display:grid;grid-template-columns:70px minmax(160px,.55fr) minmax(300px,1fr) minmax(360px,1.15fr);gap:clamp(18px,3vw,55px);padding:clamp(38px,4.5vw,70px) 0;border-bottom:1px solid rgba(20,20,20,.3);align-items:start}
+#about .about-timeline{display:block;width:100%;border-top:1px solid var(--ink);clear:both}
+#about .about-chapter{display:grid;grid-template-columns:70px minmax(160px,.55fr) minmax(300px,1fr) minmax(360px,1.15fr);gap:clamp(18px,3vw,55px);width:100%;padding:clamp(38px,4.5vw,70px) 0;border-bottom:1px solid rgba(20,20,20,.3);align-items:start;box-sizing:border-box}
 #about .about-chapter-no,#about .about-chapter-place,#about .about-present-label{font:10px "DM Mono",monospace;letter-spacing:.08em}
 #about .about-chapter-no{opacity:.45}#about .about-chapter-place{font-weight:600}
 #about .about-chapter h3{font:500 clamp(27px,3vw,48px)/.98 "Instrument Serif",serif;letter-spacing:-.035em;margin:-5px 0 0;max-width:460px}
 #about .about-chapter p{font-size:14px;line-height:1.68;margin:0;max-width:540px}
-#about .about-present{display:grid;grid-template-columns:110px 1.25fr .65fr;gap:clamp(30px,5vw,90px);padding:clamp(90px,10vw,160px) 0;align-items:start}
+#about .about-present{display:grid!important;grid-template-columns:110px minmax(0,1.25fr) minmax(280px,.65fr)!important;gap:clamp(30px,5vw,90px);width:100%;max-width:none;clear:both;padding:clamp(90px,10vw,160px) 0;align-items:start;border-top:0}
 #about .about-present-label{padding-top:9px}
-#about .about-present-big{font:500 clamp(42px,5.4vw,88px)/.93 "Instrument Serif",serif;letter-spacing:-.05em;margin:0;max-width:900px}
-#about .about-present-copy{font-size:14px;line-height:1.7;margin:8px 0 0;max-width:450px}
+#about .about-present-big{font:500 clamp(42px,5vw,82px)/.94 "Instrument Serif",serif;letter-spacing:-.05em;margin:0;max-width:850px;min-width:0}
+#about .about-present-copy{font-size:14px;line-height:1.7;margin:8px 0 0;max-width:430px;min-width:0}
 #about .about-footerline{display:grid;grid-template-columns:repeat(5,auto) 1fr;gap:22px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:16px 0;font:9px "DM Mono",monospace;letter-spacing:.07em;align-items:center}
 #about .about-footerline strong{text-align:right;font-weight:500}
 @media(max-width:950px){#about .about-head{grid-template-columns:90px 1fr}#about .about-timeline .about-chapter{grid-template-columns:55px 150px 1fr}#about .about-chapter p{grid-column:3}#about .about-present{grid-template-columns:70px 1fr}#about .about-present-copy{grid-column:2}#about .about-footerline{grid-template-columns:repeat(5,1fr)}#about .about-footerline strong{grid-column:1/-1;text-align:left;border-top:1px solid rgba(20,20,20,.25);padding-top:14px}}
