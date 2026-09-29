@@ -720,3 +720,31 @@ body.lightbox-open{overflow:hidden}
 @media(max-width:800px){#photography.photography-editorial{padding:80px 22px}#photography .photo-intro h2{font-size:clamp(66px,20vw,110px)}#photography .photo-lead,#photography .photo-series-head{grid-template-columns:1fr;gap:30px}#photography .photo-lead>span{justify-self:start}#photography .photo-series.airsoft{margin-left:-22px;margin-right:-22px;padding-left:22px;padding-right:22px}}
 @media(max-width:560px){#photography .photo-grid{columns:1;column-gap:0}#photography .photo-item{margin-bottom:28px}}
 
+
+/* Sumo busts — 3D sculpture */
+#3d.sumo-3d{padding:clamp(90px,9vw,150px) clamp(22px,5vw,80px);background:#141414;color:#f0ede5}
+#3d .sumo3d-intro{padding-bottom:clamp(80px,9vw,140px)}
+#3d .sumo3d-intro h2{font:500 clamp(78px,13vw,200px)/.78 Inter,sans-serif;letter-spacing:-.08em;margin:clamp(50px,7vw,95px) 0}
+#3d .sumo3d-intro h2 em{font-family:"Instrument Serif",serif;font-weight:400}
+#3d .sumo3d-lead{display:grid;grid-template-columns:1.25fr .75fr;gap:7vw;align-items:end}
+#3d .sumo3d-lead p{font:400 clamp(25px,3.2vw,48px)/1.1 "Instrument Serif",serif;max-width:900px;margin:0}
+#3d .sumo3d-lead a{justify-self:end;color:inherit;font:11px "DM Mono",monospace;letter-spacing:.08em;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:5px}
+#3d .sumo3d-feature{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.5vw,24px);padding:clamp(55px,7vw,100px) 0;border-top:1px solid rgba(240,237,229,.25)}
+#3d .sumo3d-feature figure{margin:0;background:#242424}
+#3d .sumo3d-feature img{display:block;width:100%;height:auto}
+#3d .sumo3d-feature-copy{grid-column:2;padding-top:28px}
+#3d .sumo3d-feature-copy>span,#3d .sumo3d-models-head>span{font:11px "DM Mono",monospace;letter-spacing:.1em}
+#3d .sumo3d-feature-copy p{font-size:16px;line-height:1.65;max-width:620px}
+#3d .sumo3d-context{display:grid;grid-template-columns:1fr 1fr;gap:7vw;padding:clamp(80px,9vw,145px) 0;border-top:1px solid rgba(240,237,229,.25)}
+#3d .sumo3d-context h3{font:500 clamp(38px,5vw,74px)/.98 Inter,sans-serif;letter-spacing:-.055em;margin:18px 0 0;max-width:760px}
+#3d .sumo3d-context>p{font-size:17px;line-height:1.7;max-width:620px;margin:0}
+#3d .sumo3d-models{padding-top:clamp(70px,8vw,120px);border-top:1px solid rgba(240,237,229,.25)}
+#3d .sumo3d-models-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}
+#3d .sumo3d-models-head p{font:400 30px "Instrument Serif",serif;margin:0}
+#3d .sumo3d-links{border-top:1px solid rgba(240,237,229,.25)}
+#3d .sumo3d-links a{display:grid;grid-template-columns:70px 1fr auto;align-items:center;gap:20px;color:inherit;text-decoration:none;padding:20px 4px;border-bottom:1px solid rgba(240,237,229,.25);transition:padding .2s ease,background .2s ease}
+#3d .sumo3d-links a span,#3d .sumo3d-links a i{font:10px "DM Mono",monospace;opacity:.55;font-style:normal}
+#3d .sumo3d-links a b{font:500 clamp(20px,2.4vw,34px) Inter,sans-serif;letter-spacing:-.035em}
+#3d .sumo3d-links a:hover{padding-left:14px;padding-right:14px;background:#d9ff45;color:#141414}
+#3d .sumo3d-credit{font:11px/1.6 "DM Mono",monospace;opacity:.6;max-width:720px;margin:35px 0 0}
+@media(max-width:760px){#3d.sumo-3d{padding:80px 22px}#3d .sumo3d-intro h2{font-size:clamp(70px,22vw,120px)}#3d .sumo3d-lead,#3d .sumo3d-context{grid-template-columns:1fr;gap:35px}#3d .sumo3d-lead a{justify-self:start}#3d .sumo3d-feature{grid-template-columns:1fr}#3d .sumo3d-feature-copy{grid-column:1}#3d .sumo3d-links a{grid-template-columns:42px 1fr auto}}
