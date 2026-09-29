@@ -1,0 +1,29 @@
+name: Extract Gato das Horas
+on:
+  push:
+    paths:
+      - "Gato_das_horas.zip"
+      - ".github/workflows/extract-gato.yml"
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract uploaded extension
+        run: |
+          rm -rf assets/tools/gato-real
+          mkdir -p assets/tools/gato-real
+          unzip -q -o Gato_das_horas.zip -d /tmp/gato
+          ROOT="$(find /tmp/gato -type f -name popup.html -printf '%h\n' | head -1)"
+          test -n "$ROOT"
+          cp -a "$ROOT"/. assets/tools/gato-real/
+      - name: Commit extracted source
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/tools/gato-real
+          git diff --cached --quiet && exit 0
+          git commit -m "Extract Gato das Horas source for portfolio demo"
+          git push
