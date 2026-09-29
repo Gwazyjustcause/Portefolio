@@ -920,3 +920,95 @@ body.lightbox-open{overflow:hidden}
  .bap-marks{grid-template-columns:1fr}.bap-marks>div.bowl{grid-column:auto}.bap-colour{grid-template-columns:1fr}.bap-colour>div:first-child{grid-column:auto}.bap-swatch{min-height:240px}
  .bap-application-copy{padding:65px 22px}.bap-application figure{min-height:560px}
 }
+
+
+/* Cuidar+ 2026 portfolio refresh — source-led, no invented artwork */
+#cuidar.cuidar-case{padding-left:clamp(22px,5vw,80px);padding-right:clamp(22px,5vw,80px)}
+#cuidar .cuidar-hero-final{padding-top:clamp(65px,7vw,110px)!important}
+#cuidar .cuidar-hero-grid.meaningful{
+  gap:0!important;
+  margin-top:clamp(45px,6vw,90px)!important;
+  border:1px solid #171717;
+  min-height:680px
+}
+#cuidar .brand-field{
+  min-height:680px!important;
+  padding:clamp(36px,4vw,64px)!important;
+  background:var(--care-blue)!important;
+  position:relative;
+  display:flex!important;
+  flex-direction:column;
+  align-items:center!important;
+  justify-content:center!important
+}
+#cuidar .brand-field:before{
+  display:block!important;
+  content:"+";
+  position:absolute;
+  right:-.04em;
+  bottom:-.31em;
+  font:700 clamp(300px,32vw,560px)/1 Inter,sans-serif;
+  color:var(--care-yellow);
+  opacity:.13;
+  pointer-events:none
+}
+#cuidar .brand-field img{
+  width:min(390px,70%)!important;
+  max-height:450px!important;
+  position:relative;
+  z-index:2
+}
+#cuidar .cuidar-field-label{
+  position:absolute;left:clamp(24px,3vw,44px);top:clamp(24px,3vw,40px);
+  color:#fff;font:700 11px/1.3 "DM Mono",monospace;letter-spacing:.08em;z-index:2
+}
+#cuidar .cuidar-field-foot{
+  position:absolute;left:clamp(24px,3vw,44px);right:clamp(24px,3vw,44px);bottom:clamp(24px,3vw,40px);
+  display:flex;justify-content:space-between;color:#fff;
+  font:700 10px/1.3 "DM Mono",monospace;letter-spacing:.06em;z-index:2
+}
+#cuidar .cuidar-hero-copy{
+  padding:clamp(55px,6vw,90px)!important;
+  background:var(--care-yellow)!important;
+  position:relative
+}
+#cuidar .cuidar-hero-copy h2{
+  font-family:Inter,sans-serif!important;font-weight:800!important;
+  font-size:clamp(62px,7vw,118px)!important;line-height:.86!important;
+  letter-spacing:-.07em!important;margin:18px 0 34px!important
+}
+#cuidar .cuidar-hero-copy>p:last-of-type{max-width:610px!important}
+#cuidar .brief-facts{margin-top:42px!important}
+#cuidar .cuidar-name-lockup{
+  margin-top:auto;padding-top:38px;display:flex;align-items:baseline;gap:8px;
+  font:800 clamp(28px,3vw,48px)/1 Inter,sans-serif;letter-spacing:-.04em
+}
+#cuidar .cuidar-name-lockup b{color:var(--care-blue);font-size:1.3em}
+#cuidar .cuidar-name-lockup em{margin-left:auto;font:400 clamp(20px,2vw,30px)/1 "Instrument Serif",serif}
+#cuidar .cuidar-step{padding:clamp(85px,9vw,145px) 0!important}
+#cuidar .cuidar-statement{
+  margin-left:calc(-1 * clamp(22px,5vw,80px))!important;
+  margin-right:calc(-1 * clamp(22px,5vw,80px))!important;
+  padding:clamp(55px,6vw,90px) clamp(22px,8vw,130px)!important;
+  background:var(--care-blue)!important
+}
+#cuidar .cuidar-statement p{max-width:1200px}
+#cuidar .colour-system{background:#fff;border:1px solid #171717;padding:clamp(40px,5vw,75px)!important;margin-top:0}
+#cuidar .cuidar-logo-system{border-top:0!important}
+#cuidar .system-marks{background:#fff}
+#cuidar .system-marks figure:first-child{box-shadow:inset 0 8px 0 var(--care-blue)}
+#cuidar .system-marks figure:last-child{box-shadow:inset 0 8px 0 var(--care-yellow)}
+#cuidar .type-rule{background:var(--care-yellow);padding:clamp(45px,6vw,90px)!important;margin-left:calc(-1 * clamp(22px,5vw,80px));margin-right:calc(-1 * clamp(22px,5vw,80px));padding-left:clamp(22px,8vw,130px)!important;padding-right:clamp(22px,8vw,130px)!important}
+#cuidar .cuidar-reflection{padding-bottom:clamp(70px,8vw,120px)!important}
+@media(max-width:900px){
+ #cuidar .cuidar-hero-grid.meaningful{grid-template-columns:1fr!important;min-height:0}
+ #cuidar .brand-field{min-height:520px!important}
+ #cuidar .cuidar-hero-copy{padding:55px 35px!important}
+}
+@media(max-width:560px){
+ #cuidar .brand-field{min-height:420px!important;padding:35px!important}
+ #cuidar .brand-field img{width:min(280px,72%)!important}
+ #cuidar .cuidar-field-foot{font-size:8px!important}
+ #cuidar .cuidar-name-lockup{flex-wrap:wrap}
+ #cuidar .cuidar-name-lockup em{width:100%;margin-left:0}
+}
