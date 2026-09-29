@@ -725,7 +725,7 @@ body.lightbox-open{overflow:hidden}
 [id="3d"].sumo-3d{padding:0;background:#080808;color:#e9e5dc}
 [id="3d"] .sumo3d-stage{display:grid;grid-template-columns:minmax(280px,.82fr) minmax(420px,1.25fr) minmax(190px,.48fr);gap:clamp(22px,3vw,54px);padding:clamp(72px,7vw,120px) clamp(28px,3.5vw,64px) clamp(48px,5vw,82px);align-items:start}
 [id="3d"] .sumo3d-copy{padding-top:18px}
-[id="3d"] .sumo3d-num,[id="3d"] .sumo3d-kicker,[id="3d"] .sumo3d-credit,[id="3d"] .sumo3d-published-head,[id="3d"] .sumo3d-card span{font-family:"DM Mono",monospace;letter-spacing:.09em}
+[id="3d"] .sumo3d-num,[id="3d"] .sumo3d-kicker,[id="3d"] .sumo3d-credit,[id="3d"] .sumo3d-published-head,[id="3d"] .sumo3d-card span{display:block;font:9px/1.4 "DM Mono",monospace;letter-spacing:.08em;margin:0}
 [id="3d"] .sumo3d-num{font-size:12px;margin:0 0 26px;opacity:.72}
 [id="3d"] .sumo3d-copy h2{font:500 clamp(40px,4.2vw,72px)/.92 Inter,sans-serif;letter-spacing:-.045em;margin:0 0 12px;color:#f0ede5}
 [id="3d"] .sumo3d-kicker{font-size:11px;margin:0 0 18px;opacity:.82}
@@ -743,7 +743,7 @@ body.lightbox-open{overflow:hidden}
 [id="3d"] .sumo3d-published-head{display:flex;justify-content:space-between;gap:25px;align-items:center;border-top:1px solid #323232;padding:18px 0;font-size:10px}
 [id="3d"] .sumo3d-published-head a{color:inherit;text-decoration:none}
 [id="3d"] .sumo3d-card-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(10px,1.2vw,18px)}
-[id="3d"] .sumo3d-card{display:block;color:inherit;text-decoration:none;min-width:0}
+[id="3d"] .sumo3d-card{display:flex;min-height:150px;flex-direction:column;color:inherit;text-decoration:none;min-width:0;padding:16px;border:1px solid #292929;background:#101010;transition:background .2s ease,color .2s ease,transform .2s ease}
 [id="3d"] .sumo3d-card img{display:block;width:100%;aspect-ratio:1/1.08;object-fit:cover;background:#111;border:1px solid #292929;filter:brightness(.88);transition:filter .2s ease,transform .2s ease}
 [id="3d"] .sumo3d-card span{display:block;font-size:9px;line-height:1.4;margin-top:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 [id="3d"] .sumo3d-card:hover img{filter:brightness(1);transform:translateY(-2px)}
