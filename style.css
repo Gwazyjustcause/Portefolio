@@ -1240,3 +1240,8 @@ body.lightbox-open{overflow:hidden}
 
 /* Keep the scaled slogan inside its narrower identity panel. */
 #cuidar.cuidar-v5 .cv5-logo-slogan img{width:44%}
+
+/* Bring the project list directly beneath the introduction. */
+.hero{padding-bottom:28px!important}
+#work.work{padding-top:0!important}
+#work>.project:first-child{border-top:1px solid var(--ink)}
