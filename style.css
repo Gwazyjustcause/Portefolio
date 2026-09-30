@@ -1086,3 +1086,21 @@ body.lightbox-open{overflow:hidden}
  #cuidar.cuidar-v5 .cv5-posts{grid-template-columns:repeat(2,1fr)}
  #cuidar.cuidar-v5 .cv5-swatches{min-height:390px}
 }
+
+/* Cuidar+ V5 contrast + brand-book corrections */
+#cuidar.cuidar-v5 .cv5-logo-field{background:#e9f5fa}
+#cuidar.cuidar-v5 .cv5-logo-field:after{color:#f7db17;opacity:.55}
+#cuidar.cuidar-v5 .cv5-symbol-panel{background:#e9f5fa;color:#00476b}
+#cuidar.cuidar-v5 .cv5-logo-yellow{background:#00476b!important}
+#cuidar.cuidar-v5 .cv5-logo-yellow>span{color:#fff!important;opacity:.78}
+#cuidar.cuidar-v5 .cv5-logo-symbol{background:#fff!important}
+#cuidar.cuidar-v5 .cv5-brandbook{grid-template-columns:.8fr 1.2fr}
+#cuidar.cuidar-v5 .cv5-book-cover{min-height:470px!important;background:#57b5e0!important;color:#00476b;position:relative}
+#cuidar.cuidar-v5 .cv5-book-cover:after{content:"+";position:absolute;right:18px;bottom:-.15em;font:700 210px/1 Inter,sans-serif;color:#f7db17;opacity:.72}
+#cuidar.cuidar-v5 .cv5-book-cover img{position:relative;z-index:1;width:155px}
+#cuidar.cuidar-v5 .cv5-book-copy{display:flex;flex-direction:column;align-items:flex-start}
+#cuidar.cuidar-v5 .cv5-book-copy h3{font:400 clamp(48px,5.5vw,88px)/.95 "Instrument Serif",serif;letter-spacing:-.045em;margin:22px 0 30px;color:#00476b}
+#cuidar.cuidar-v5 .cv5-book-copy>p:not(.eyebrow){font:16px/1.65 Inter,sans-serif;max-width:620px}
+#cuidar.cuidar-v5 .cv5-book-link{display:inline-flex;margin-top:34px;padding:15px 19px;background:#00476b;color:#fff;text-decoration:none;font:700 10px/1 "DM Mono",monospace;letter-spacing:.08em;transition:transform .2s ease,background .2s ease,color .2s ease}
+#cuidar.cuidar-v5 .cv5-book-link:hover{transform:translateY(-2px);background:#f7db17;color:#00476b}
+@media(max-width:800px){#cuidar.cuidar-v5 .cv5-brandbook{grid-template-columns:1fr}}
