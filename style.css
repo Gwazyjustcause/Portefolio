@@ -1036,9 +1036,9 @@ body.lightbox-open{overflow:hidden}
 #cuidar.cuidar-v5 .cv5-system-head{display:grid;grid-template-columns:.55fr 1.45fr;gap:8vw;align-items:start;margin-bottom:70px}
 #cuidar.cuidar-v5 .cv5-system-head h3{margin:0}
 #cuidar.cuidar-v5 .cv5-logo-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:1px;background:#171717;border:1px solid #171717}
-#cuidar.cuidar-v5 .cv5-logo-grid figure{margin:0;background:#fff;min-height:440px;padding:25px;display:flex;flex-direction:column}
+#cuidar.cuidar-v5 .cv5-logo-grid figure{margin:0;background:#fff;min-height:440px;padding:25px;display:flex;flex-direction:column;overflow:hidden}
 #cuidar.cuidar-v5 .cv5-logo-grid figure>span{color:var(--cv-navy)}
-#cuidar.cuidar-v5 .cv5-logo-grid img{display:block;width:82%;height:330px;object-fit:contain;margin:auto}
+#cuidar.cuidar-v5 .cv5-logo-grid img{display:block;width:82%;height:330px;object-fit:contain;margin:auto}\n#cuidar.cuidar-v5 .cv5-logo-main img{transform:scale(2.15);transform-origin:center}\n#cuidar.cuidar-v5 .cv5-logo-slogan img{transform:scale(1.85);transform-origin:center}
 #cuidar.cuidar-v5 .cv5-logo-slogan{background:#e9f5fa!important}
 #cuidar.cuidar-v5 .cv5-logo-yellow{background:var(--cv-navy)!important;color:#fff}
 #cuidar.cuidar-v5 .cv5-logo-symbol{background:var(--cv-yellow)!important}
@@ -1079,7 +1079,7 @@ body.lightbox-open{overflow:hidden}
  #cuidar.cuidar-v5 .cv5-system-head,#cuidar.cuidar-v5 .cv5-social-head{grid-template-columns:1fr;gap:25px}
  #cuidar.cuidar-v5 .cv5-logo-grid{grid-template-columns:1fr}
  #cuidar.cuidar-v5 .cv5-logo-grid figure{min-height:330px}
- #cuidar.cuidar-v5 .cv5-logo-grid img{height:230px;width:82%;transform:none}
+ #cuidar.cuidar-v5 .cv5-logo-grid img{height:230px;width:82%;transform:none}\n  #cuidar.cuidar-v5 .cv5-logo-main img{transform:scale(1.55)}\n  #cuidar.cuidar-v5 .cv5-logo-slogan img{transform:scale(1.4)}
  #cuidar.cuidar-v5 .cv5-app-head>p:last-child{grid-column:1;grid-row:auto}
  #cuidar.cuidar-v5 .cv5-app-grid{grid-template-columns:1fr}
  #cuidar.cuidar-v5 .cv5-app-grid .number{margin-top:0}
