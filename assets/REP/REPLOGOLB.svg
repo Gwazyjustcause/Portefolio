@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2026 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="71.1636mm" height="18.796mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3196.74 844.33"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="722" font-variant="normal" style="fill-rule:nonzero" font-weight="700">
+	<font-face 
+		font-family="Arial">
+		<font-face-src>
+			<font-face-name name="Arial Bold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="M" horiz-adv-x="832" d="M70.9965 0l0 716.014 217.185 0 128.334 -488.357 126.805 488.357 217.673 0 0 -716.014 -133.992 0 -0.487837 563.679 -141.18 -563.679 -139.326 0 -140.497 563.679 -0.520359 -563.679 -133.992 0z"/>
+   <glyph unicode="T" horiz-adv-x="610" d="M233.999 0l0 594.998 -212.014 0 0 121.016 568.004 0 0 -121.016 -211.006 0 0 -594.998 -144.985 0z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Arial";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .fil0 {fill:#B0A69B}
+    .fnt0 {font-weight:bold;font-size:138.12px;font-family:'Arial'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2391868704912">
+   <path class="fil0" d="M97.9 238.09l669.44 0c79.9,0 73.6,113.09 -7.98,113.09l-679.75 0.03 -79.6 492.25 283.26 -0.77 41.74 -258.09 289.05 3.77 165.75 255.54 315.33 -0.89 -165.38 -271c125.99,-45.66 187.38,-94.01 217.42,-233.42 56.76,-263.4 -89.57,-339.36 -268.45,-338.59l-742.86 3.31 -37.96 234.77zm1987.31 0l82.08 -236.28 -881.73 7.25 -37.02 229.03 836.68 0zm-138.47 295.4l48.39 -182.27 -764.88 0 -79.69 492.76 881.1 -3.45 36.71 -227.04 -600.66 0 13.88 -79.7 465.15 -0.3zm247.29 -295.4l590.28 0c80.1,0 74.33,113.47 4.34,113.09l-612.81 0 -79.86 493.16 279.9 -0.22 41.07 -253.98 484.88 0.23c364.26,0.17 417.32,-588.33 10.54,-587.53l-680.56 1.38 -37.8 233.86z"/>
+   <text x="2472.5" y="737.64"  class="fil0 fnt0">TM</text>
+  </g>
+ </g>
+</svg>
