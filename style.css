@@ -1245,3 +1245,7 @@ body.lightbox-open{overflow:hidden}
 .hero{padding-bottom:28px!important}
 #work.work{padding-top:0!important}
 #work>.project:first-child{border-top:1px solid var(--ink)}
+
+/* Keep the opening title close to its introduction. */
+.hero{min-height:0!important;grid-template-rows:auto auto auto!important}
+.hero h1{margin:clamp(40px,5vw,72px) 0 clamp(28px,3vw,44px)!important}
