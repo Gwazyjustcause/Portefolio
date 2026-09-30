@@ -1237,3 +1237,6 @@ body.lightbox-open{overflow:hidden}
 
   .back-to-top{width:40px!important;height:40px!important;left:14px!important;bottom:14px!important}
 }
+
+/* Keep the scaled slogan inside its narrower identity panel. */
+#cuidar.cuidar-v5 .cv5-logo-slogan img{width:56%}
