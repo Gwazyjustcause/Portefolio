@@ -1012,3 +1012,77 @@ body.lightbox-open{overflow:hidden}
  #cuidar .cuidar-name-lockup{flex-wrap:wrap}
  #cuidar .cuidar-name-lockup em{width:100%;margin-left:0}
 }
+
+/* Cuidar+ V5 — current identity, source-led */
+#cuidar.cuidar-v5{--cv-navy:#00476b;--cv-sky:#57b5e0;--cv-yellow:#f7db17;background:#f4f1e9;padding:0 clamp(22px,4vw,76px) clamp(90px,9vw,150px)}
+#cuidar.cuidar-v5 .cv5-hero{padding:clamp(75px,7vw,120px) 0 clamp(90px,9vw,150px)}
+#cuidar.cuidar-v5 .cv5-hero-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(45px,7vw,125px);align-items:center;margin-top:clamp(80px,9vw,150px)}
+#cuidar.cuidar-v5 .cv5-hero-copy h2{font:400 clamp(76px,9vw,150px)/.82 "Instrument Serif",serif;letter-spacing:-.06em;margin:20px 0 38px;color:var(--cv-navy)}
+#cuidar.cuidar-v5 .cv5-hero-copy>p:last-child{font:16px/1.65 Inter,sans-serif;max-width:590px}
+#cuidar.cuidar-v5 .cv5-logo-field{position:relative;min-height:650px;background:var(--cv-sky);display:grid;place-items:center;padding:65px;overflow:hidden}
+#cuidar.cuidar-v5 .cv5-logo-field:after{content:"+";position:absolute;right:-.09em;bottom:-.29em;font:700 520px/1 Inter,sans-serif;color:var(--cv-yellow);opacity:.24}
+#cuidar.cuidar-v5 .cv5-logo-field img{position:relative;z-index:1;width:min(610px,92%);height:auto}
+#cuidar.cuidar-v5 .cv5-corner{position:absolute;z-index:2;top:22px;left:25px;font:9px "DM Mono",monospace;letter-spacing:.08em;color:var(--cv-navy)}
+#cuidar.cuidar-v5 .cv5-strip{margin:0 calc(-1 * clamp(22px,4vw,76px));padding:20px clamp(22px,4vw,76px);background:var(--cv-navy);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px;font:10px "DM Mono",monospace;letter-spacing:.12em}
+#cuidar.cuidar-v5 .cv5-strip i{height:8px;width:8px;border-radius:50%;background:var(--cv-yellow)}
+#cuidar.cuidar-v5 .cv5-story{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(60px,9vw,150px);padding:clamp(100px,10vw,170px) 0;border-bottom:1px solid #171717}
+#cuidar.cuidar-v5 .cv5-story-copy h3,#cuidar.cuidar-v5 .cv5-system-head h3,#cuidar.cuidar-v5 .cv5-colour h3,#cuidar.cuidar-v5 .cv5-app-head h3,#cuidar.cuidar-v5 .cv5-social-head h3{font:400 clamp(48px,5.5vw,88px)/.95 "Instrument Serif",serif;letter-spacing:-.045em;margin:22px 0 34px}
+#cuidar.cuidar-v5 .cv5-story-copy>p:last-child,#cuidar.cuidar-v5 .cv5-app-head>p:last-child{font:16px/1.65 Inter,sans-serif;max-width:620px}
+#cuidar.cuidar-v5 .cv5-symbol-panel{min-height:520px;background:var(--cv-navy);color:#fff;padding:28px;display:flex;flex-direction:column}
+#cuidar.cuidar-v5 .cv5-symbol-panel>span,#cuidar.cuidar-v5 .cv5-symbol-panel small,#cuidar.cuidar-v5 .cv5-logo-grid figure>span{font:9px "DM Mono",monospace;letter-spacing:.08em}
+#cuidar.cuidar-v5 .cv5-symbol-panel img{width:min(270px,55%);margin:auto}
+#cuidar.cuidar-v5 .cv5-symbol-panel small{opacity:.65}
+#cuidar.cuidar-v5 .cv5-system{padding:clamp(100px,10vw,170px) 0;border-bottom:1px solid #171717}
+#cuidar.cuidar-v5 .cv5-system-head{display:grid;grid-template-columns:.55fr 1.45fr;gap:8vw;align-items:start;margin-bottom:70px}
+#cuidar.cuidar-v5 .cv5-system-head h3{margin:0}
+#cuidar.cuidar-v5 .cv5-logo-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:1px;background:#171717;border:1px solid #171717}
+#cuidar.cuidar-v5 .cv5-logo-grid figure{margin:0;background:#fff;min-height:440px;padding:25px;display:flex;flex-direction:column}
+#cuidar.cuidar-v5 .cv5-logo-grid figure>span{color:var(--cv-navy)}
+#cuidar.cuidar-v5 .cv5-logo-grid img{display:block;width:78%;height:310px;object-fit:contain;margin:auto}
+#cuidar.cuidar-v5 .cv5-logo-slogan{background:#e9f5fa!important}
+#cuidar.cuidar-v5 .cv5-logo-yellow{background:var(--cv-navy)!important;color:#fff}
+#cuidar.cuidar-v5 .cv5-logo-symbol{background:var(--cv-yellow)!important}
+#cuidar.cuidar-v5 .cv5-logo-symbol img{width:42%}
+#cuidar.cuidar-v5 .cv5-colour{display:grid;grid-template-columns:.85fr 1.15fr;gap:8vw;padding:clamp(100px,10vw,170px) 0;border-bottom:1px solid #171717}
+#cuidar.cuidar-v5 .cv5-colour h3{margin-bottom:0}
+#cuidar.cuidar-v5 .cv5-swatches{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;min-height:520px}
+#cuidar.cuidar-v5 .cv5-swatches>div{padding:25px;display:flex;flex-direction:column;justify-content:space-between;font:10px "DM Mono",monospace;letter-spacing:.06em}
+#cuidar.cuidar-v5 .cv5-swatches .navy{grid-row:1/3;background:var(--cv-navy);color:#fff}
+#cuidar.cuidar-v5 .cv5-swatches .sky{background:var(--cv-sky);color:var(--cv-navy)}
+#cuidar.cuidar-v5 .cv5-swatches .sun{background:var(--cv-yellow);color:var(--cv-navy)}
+#cuidar.cuidar-v5 .cv5-apps{padding:clamp(100px,10vw,170px) 0;border-bottom:1px solid #171717}
+#cuidar.cuidar-v5 .cv5-app-head{display:grid;grid-template-columns:.9fr 1.1fr;gap:7vw;align-items:end;margin-bottom:70px}
+#cuidar.cuidar-v5 .cv5-app-head .eyebrow{grid-column:1}
+#cuidar.cuidar-v5 .cv5-app-head h3{grid-column:1;margin-bottom:0}
+#cuidar.cuidar-v5 .cv5-app-head>p:last-child{grid-column:2;grid-row:1/3}
+#cuidar.cuidar-v5 .cv5-app-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(18px,2vw,34px);align-items:start}
+#cuidar.cuidar-v5 .cv5-app-grid figure{margin:0}
+#cuidar.cuidar-v5 .cv5-app-grid img{width:100%;height:auto;display:block}
+#cuidar.cuidar-v5 .cv5-app-grid figcaption{font:10px "DM Mono",monospace;margin-top:12px}
+#cuidar.cuidar-v5 .cv5-app-grid .number{margin-top:9vw}
+#cuidar.cuidar-v5 .cv5-social{padding:clamp(100px,10vw,170px) 0;border-bottom:1px solid #171717}
+#cuidar.cuidar-v5 .cv5-social-head{display:grid;grid-template-columns:.6fr 1.4fr;gap:8vw;margin-bottom:65px}
+#cuidar.cuidar-v5 .cv5-social-head h3{margin:0}
+#cuidar.cuidar-v5 .cv5-posts{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(9px,1vw,18px)}
+#cuidar.cuidar-v5 .cv5-posts figure{margin:0;overflow:hidden}
+#cuidar.cuidar-v5 .cv5-posts img{display:block;width:100%;height:auto}
+#cuidar.cuidar-v5 .cv5-brandbook{display:grid;grid-template-columns:.8fr 1.2fr;gap:9vw;align-items:center;padding:clamp(90px,9vw,145px) 0;border-bottom:1px solid #171717}
+#cuidar.cuidar-v5 .cv5-brandbook>div{min-height:360px;background:var(--cv-sky);padding:28px;display:flex;flex-direction:column;font:9px "DM Mono",monospace}
+#cuidar.cuidar-v5 .cv5-brandbook img{width:150px;margin:auto}
+#cuidar.cuidar-v5 .cv5-brandbook>p{font:400 clamp(31px,3vw,49px)/1.08 "Instrument Serif",serif}
+#cuidar.cuidar-v5 .cv5-reflection{padding-top:clamp(90px,9vw,145px)}
+@media(max-width:800px){
+ #cuidar.cuidar-v5 .cv5-hero-grid,#cuidar.cuidar-v5 .cv5-story,#cuidar.cuidar-v5 .cv5-colour,#cuidar.cuidar-v5 .cv5-app-head,#cuidar.cuidar-v5 .cv5-brandbook{grid-template-columns:1fr}
+ #cuidar.cuidar-v5 .cv5-logo-field{min-height:430px;padding:35px}
+ #cuidar.cuidar-v5 .cv5-logo-field:after{font-size:330px}
+ #cuidar.cuidar-v5 .cv5-strip{overflow:hidden;white-space:nowrap}
+ #cuidar.cuidar-v5 .cv5-system-head,#cuidar.cuidar-v5 .cv5-social-head{grid-template-columns:1fr;gap:25px}
+ #cuidar.cuidar-v5 .cv5-logo-grid{grid-template-columns:1fr}
+ #cuidar.cuidar-v5 .cv5-logo-grid figure{min-height:330px}
+ #cuidar.cuidar-v5 .cv5-logo-grid img{height:230px}
+ #cuidar.cuidar-v5 .cv5-app-head>p:last-child{grid-column:1;grid-row:auto}
+ #cuidar.cuidar-v5 .cv5-app-grid{grid-template-columns:1fr}
+ #cuidar.cuidar-v5 .cv5-app-grid .number{margin-top:0}
+ #cuidar.cuidar-v5 .cv5-posts{grid-template-columns:repeat(2,1fr)}
+ #cuidar.cuidar-v5 .cv5-swatches{min-height:390px}
+}
