@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@300;400&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap');
 :root{--paper:#f0ede5;--ink:#141414;--acid:#d9ff45;--red:#d6533d;--blue:#65788f;--line:rgba(20,20,20,.18)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}::selection{background:var(--acid);color:var(--ink)}
 header{height:68px;padding:0 3.5vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(240,237,229,.92);backdrop-filter:blur(16px);z-index:50}.name{font-weight:600;letter-spacing:-.035em;font-size:14px}nav{display:flex;align-items:center;gap:28px;font:11px "DM Mono",monospace;text-transform:uppercase}nav>a{position:relative}nav>a:after{content:"";position:absolute;left:0;right:100%;bottom:-5px;height:1px;background:currentColor;transition:right .2s}nav>a:hover:after{right:0}
@@ -1249,3 +1249,61 @@ body.lightbox-open{overflow:hidden}
 /* Keep the opening title close to its introduction. */
 .hero{min-height:0!important;grid-template-rows:auto auto auto!important}
 .hero h1{margin:clamp(40px,5vw,72px) 0 clamp(28px,3vw,44px)!important}
+
+/* REP — fitness brand identity */
+#rep.rep-case{--rep-lime:#d8ff32;--rep-paper:#f1efe8;--rep-stone:#b0a69b;background:#111;color:var(--rep-paper);padding:48px clamp(20px,4vw,76px) 64px;overflow:hidden}
+#rep figure{margin:0;min-width:0}
+#rep img{display:block;max-width:100%}
+#rep p{font:15px/1.65 Inter,Arial,sans-serif}
+#rep .eyebrow,#rep figcaption,#rep .rep-top>span,#rep .rep-marks figure>span{font:10px/1.5 "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
+#rep figcaption{margin-top:14px;color:var(--rep-stone)}
+#rep .rep-top{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #ffffff32;padding-bottom:18px}
+#rep .rep-top p{margin:0}
+#rep .rep-top>span{white-space:nowrap;color:var(--rep-stone)}
+#rep .rep-hero{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(28px,5vw,80px);align-items:center;padding:56px 0}
+#rep .rep-hero-copy{min-width:0}
+#rep .rep-wordmark{width:min(430px,80%);height:auto;margin-bottom:40px}
+#rep .rep-hero h2{font:400 clamp(46px,5.2vw,84px)/1.05 Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:-.01em;margin:0 0 26px}
+#rep .rep-hero-copy>p{max-width:470px;margin:0;color:#d4d0c6}
+#rep .rep-hero-image img{width:100%;height:auto}
+#rep .rep-philosophy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--rep-lime);color:#111;margin:0 calc(-1 * clamp(20px,4vw,76px));padding:28px clamp(20px,4vw,76px)}
+#rep .rep-philosophy article{padding:10px 28px;border-left:1px solid #1114}
+#rep .rep-philosophy article:first-child{padding-left:0;border:0}
+#rep .rep-philosophy article>span{font:10px "DM Mono",monospace}
+#rep .rep-philosophy h3{font:400 clamp(36px,4vw,64px)/1 Anton,Impact,sans-serif;margin:14px 0}
+#rep .rep-philosophy p{margin:0;max-width:320px}
+#rep .rep-campaign,#rep .rep-apparel{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,7vw,110px);align-items:center;padding:64px 0;border-bottom:1px solid #ffffff32}
+#rep .rep-copy h3,#rep .rep-section-head h3{font:400 clamp(38px,4.2vw,68px)/1.08 Anton,Impact,sans-serif;text-transform:uppercase;margin:20px 0 28px}
+#rep .rep-copy>p:last-child{max-width:500px;color:#d4d0c6}
+#rep .rep-campaign img,#rep .rep-apparel img{width:100%;height:auto}
+#rep .rep-system{padding:64px 0;border-bottom:1px solid #ffffff32}
+#rep .rep-section-head{display:grid;grid-template-columns:.5fr 1fr 1fr;gap:32px;align-items:start;margin-bottom:36px}
+#rep .rep-section-head h3,#rep .rep-section-head p{margin:0}
+#rep .rep-section-head>p:last-child{color:#d4d0c6}
+#rep .rep-marks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#rep .rep-marks figure{min-height:280px;padding:22px;display:flex;flex-direction:column;color:#111}
+#rep .rep-marks img{width:88%;height:180px;object-fit:contain;margin:auto}
+#rep .rep-mark-light{background:var(--rep-paper)}
+#rep .rep-mark-lime{background:var(--rep-lime)}
+#rep .rep-mark-stone{background:var(--rep-stone)}
+#rep .rep-mark-stone img{width:46%}
+#rep .rep-details{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,6vw,96px);padding:64px 0;border-bottom:1px solid #ffffff32}
+#rep .rep-swatches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#ffffff32;border:1px solid #ffffff32;margin:24px 0}
+#rep .rep-swatches>div{min-height:148px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;font:10px "DM Mono",monospace}
+#rep .rep-swatch-black{background:#111}
+#rep .rep-swatch-lime{background:var(--rep-lime);color:#111}
+#rep .rep-swatch-paper{background:var(--rep-paper);color:#111}
+#rep .rep-swatch-stone{background:var(--rep-stone);color:#111}
+#rep .rep-colour>p:last-child,#rep .rep-type>p:last-child{max-width:510px;color:#d4d0c6}
+#rep .rep-type strong{display:block;font:400 clamp(52px,6vw,94px)/1.05 Anton,Impact,sans-serif;margin:26px 0}
+#rep .rep-type em{font-style:normal;color:var(--rep-lime)}
+#rep .rep-apparel{grid-template-columns:1.1fr .9fr}
+#rep .rep-book{display:flex;align-items:center;justify-content:space-between;gap:30px;background:var(--rep-lime);color:#111;padding:30px 36px;margin-top:48px}
+#rep .rep-book span{font:10px/1.5 "DM Mono",monospace;letter-spacing:.05em}
+#rep .rep-book strong{display:block;font:400 clamp(32px,3.8vw,58px)/1.15 Anton,Impact,sans-serif;text-transform:uppercase;margin:14px 0}
+#rep .rep-book p{margin:0}
+#rep .rep-book>b{font:60px/1 Inter,sans-serif;transition:transform .2s}
+#rep .rep-book:hover>b{transform:translate(4px,-4px)}
+#rep .rep-book:focus-visible{outline:3px solid white;outline-offset:5px}
+@media(max-width:900px){#rep .rep-hero,#rep .rep-campaign,#rep .rep-apparel,#rep .rep-details{grid-template-columns:1fr;gap:30px}#rep .rep-hero h2{font-size:clamp(46px,8vw,76px)}#rep .rep-hero-image{max-width:760px}#rep .rep-section-head{grid-template-columns:1fr 1fr}#rep .rep-section-head>.eyebrow{grid-column:1/-1}#rep .rep-marks{grid-template-columns:1fr 1fr}#rep .rep-mark-stone{grid-column:1/-1}#rep .rep-mark-stone img{width:140px}#rep .rep-type strong{font-size:clamp(60px,10vw,90px)}}
+@media(max-width:600px){#rep.rep-case{padding-top:32px;padding-bottom:40px}#rep .rep-top{flex-direction:column;gap:8px}#rep .rep-hero,#rep .rep-campaign,#rep .rep-apparel,#rep .rep-system,#rep .rep-details{padding:40px 0}#rep .rep-wordmark{margin-bottom:28px}#rep .rep-hero h2{font-size:clamp(38px,10vw,56px)}#rep .rep-philosophy{grid-template-columns:1fr;gap:20px}#rep .rep-philosophy article{padding:18px 0 0;border-left:0;border-top:1px solid #1114}#rep .rep-philosophy article:first-child{padding-top:0}#rep .rep-philosophy p{max-width:none}#rep .rep-section-head,#rep .rep-marks{grid-template-columns:1fr}#rep .rep-mark-stone{grid-column:auto}#rep .rep-marks figure{min-height:240px}#rep .rep-book{padding:24px;gap:16px}#rep .rep-book>b{font-size:38px}#rep .rep-book strong{font-size:32px}}
